@@ -70,3 +70,10 @@ layout などは自分でなんとかする必要がありました。
 URL が `/blog/categories/タグ` から `/tag/タグ.html` に変わってしまうので、
 [Jekyll + Netlify でのリダイレクト](https://qiita.com/gatespace/items/accb418239a45834d529) などを参考にして、
 `_redirects` ファイルを用意しました。
+
+## アマゾンへのリンク
+
+アフィリエイトはあまり効果がないので、基本的には書影目的にアマゾンアソシエイトの iframe を埋め込んでいたのですが、
+amp-iframe のファーストビューの領域の75%よりも下、または最上部から600pxより下という制限にひっかかって、
+読書会のエントリーの最初に対象の書籍を埋め込んでいたのがエラーになったので、
+iframe から `_includes/amazon.html` の amp-iframe に変更すると共に末尾に移動しました。
