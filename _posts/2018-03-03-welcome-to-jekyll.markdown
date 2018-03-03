@@ -30,6 +30,11 @@ URL が今まで通り `/blog/YYYY-MM-DD.html` になるように変更しまし
 `ruby -pi -e 'sub(/^categories:/, "category: blog\ntags:")' _posts/*.markdown`
 のように一括変換しました。
 
+## URL 直書きのリンク
+
+`http://example.com/` のように直接書いていてもリンクになっていたものが、リンクにならなくなったので、
+`<http://example.com/>` のように `<>` でくくるようにしました。
+
 ## Rabbit Slide Show 対応
 
 `{% raw %}{% include rabbit-slide.html author="znz" slide="slide-name" title="スライドのタイトル" %}{% endraw %}` のように include で使いまわせるようにして、 amp-iframe を埋め込むようにしました。
