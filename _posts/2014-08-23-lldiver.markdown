@@ -1,0 +1,63 @@
+---
+layout: post
+title: "LL Diver に参加した"
+date: 2014-08-23 21:00:00 +0900
+comments: true
+category: blog
+tags: event jus
+---
+[LL Diver | Dive into Lightweight Languages](http://ll.jus.or.jp/2014/ "LL Diver | Dive into Lightweight Languages")
+に参加してきました。
+
+<!--more-->
+
+[Lightweight Language Day and Night(通称:LLDN)](http://ll.jus.or.jp/2005/ "Lightweight Language Day and Night(通称:LLDN)")
+と同じ二部構成ということで LLDN の T シャツを着ていきました。
+
+今回は全体的に JavaScipt の話が多かったように感じました。
+
+## 昼の部
+
+午前中はイノベーションホールでプレゼンを聞いていました。
+ペパボのエンジニア新人研修はいろいろと参考にしたいと思いました。
+
+昼休みは7階の休憩スペースのところで食事を売っていたので、
+そこで食べました。
+
+それから会議室2に行ってみると無線LANがつながるようになったというアナウンスがあったので、
+llquiz に挑戦しました。
+1問目は20分ほどですぐに解けたのですが、
+2問目は takesako さんのマインスイーパーの自動化の話を聞きながら解いていた影響なのか、
+おけない場所をマークしていくという重い解き方にしてしまったので、
+解くのにもプログラムの実行にも時間がかかってしまうというダメな結果になってしまいました。
+実際にどう書いたのかは <https://gist.github.com/znz/6ccdcede4d30c2c749b6> で公開しました。
+アナウンスがなかったためか、最終的な参加者が少なかったのが残念な感じでした。
+
+時間がかかったので、最後は mozaic.fm 出張版: TypeScript and Dart を聞きながら解いていました。
+TypeScript と Dart のことをほとんど知らなかったので、この時間もイノベーションホールに行っていた方が良かったのかもしれないと思いましたが、そのままそこで聞いていました。
+
+休憩時間の後はまたイノベーションホールに移動して、プレゼンを聞いていました。
+
+IPv6 の話はサーバー側の対応が必要という説明をするときの参考になりそうでしたが、
+実際にどうプログラムを変更するのかという話はほとんどありませんでした。
+
+サイバー戦争の話は MIT でどういう授業を受けてきたのかの紹介でした。
+日本ではあまり話題にしない攻撃側の話もあるという感じでした。
+
+LL短歌の Python バイトコードの話は途中の段階のは、スタックの最後の状態が 5 7 5 7 7 になるのかな、と思ったのですが、
+32 32 32 になったあたりで違うと気づきました。
+
+LT では時間内に収まっていたり収まらなかったり、最初から時間内に収める気がない人がいたり、
+通知をきっていなくて twitter 経由で遊ばれている人がいたりしました。
+
+<div class="amazon pull-right">
+{% include amazon.html src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=znz-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=479812947X&linkId=5f9cddd754aad346185c111320fa39e7" %}
+</div>
+
+抽選では
+[実践Node.js プログラミング (Programmer's SELECTION)](http://amzn.to/2HZ4fqM)
+をいただいたので、帰りの新幹線の中で読み始めました。
+
+## 夜の部
+
+会場を出たら忘れてくださいということだったのでほとんど忘れました (ということにしておく)。
