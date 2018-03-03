@@ -1,0 +1,11 @@
+---
+layout: post
+title: "タグクラウドプラグインを入れた"
+date: 2013-09-11
+comments: true
+category: blog
+tags: octopress
+---
+探してみて見つけた中で今もちゃんとメンテナンスされてそうだった
+[Tag cloud plugin for Octopress](https://github.com/tokkonopapa/octopress-tagcloud)
+を入れてタグクラウドが出るようにしてみました。
