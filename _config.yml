@@ -13,31 +13,43 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Awesome Site Title
+email: your-email@domain.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Awesome site description here
+logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+paginate:	5 # The number of posts to show per page on your homepage
+
+name: 'Your Name'
+bio: >
+  Mea suas vituperatoribus et, virtute corpora quaestio cum ut.
+  Ne solet nostrum complectitur pri, vis ut inani populo.
+author_image: "/assets/images/author.jpg"
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# Google Analytics
+analytics_id: ""
+
 # Build settings
 markdown: kramdown
-theme: minima
+
+kramdown:
+  parse_block_html: true
+
 plugins:
-  - jekyll-feed
+- jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
