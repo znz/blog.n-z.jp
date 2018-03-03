@@ -17,6 +17,16 @@ github-pages gem は jekyll が 3.6.2 と古い (最新は 3.7.3) ことと独�
 
 README にはられているスクリーンショットなどは履歴にいらないなと思って、 `jekyll new blog` で新規作成してから、 amplify のファイルをコピーしてはじめました。
 
+## 過去記事の移行
+
+最低限の表示確認ができたところで、現在の blog.n-z.jp の記事を取り込みはじめました。
+
+## カテゴリーからタグへの変更
+
+カテゴリーは URL に使われるため、
+`categories: foo bar` を `category: blog` と `tags: foo bar` に変更して、
+URL が今まで通り `/blog/YYYY-MM-DD.html` になるように変更しました。
+
 ## Rabbit Slide Show 対応
 
 `{% raw %}{% include rabbit-slide.html author="znz" slide="slide-name" title="スライドのタイトル" %}{% endraw %}` のように include で使いまわせるようにして、 amp-iframe を埋め込むようにしました。
