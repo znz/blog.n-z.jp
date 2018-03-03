@@ -1,0 +1,4 @@
+---
+layout: null
+---
+/blog/categories/* /tag/:splat.html
