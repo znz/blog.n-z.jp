@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'jekyll-paginate'
+gem 'jekyll-paginate', group: :jekyll_plugins
 gem 'jekyll-compose', group: :jekyll_plugins
+gem 'jekyll-tagging', group: :jekyll_plugins
 gem 'nokogiri'
 gem 'fastimage'

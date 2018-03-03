@@ -46,6 +46,10 @@ plugins:
 permalink: /:categories/:year-:month-:day-:title.html
 strict_front_matter: true
 
+# jekyll-tagging
+tag_page_layout: tag_page
+tag_page_dir: tag
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
