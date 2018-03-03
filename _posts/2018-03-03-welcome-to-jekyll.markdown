@@ -38,3 +38,9 @@ amp-iframe は https 必須のようで、 Rabbit Slide Show はすでに https 
 
 `absolute_url` だと画像サイズがとれなかったので、
 `relative_url` にする必要がありそうです。
+
+## 記事間のリンク
+
+今までは生成されるパス決め打ちで `[タイトル](/blog/YYYY-MM-DD-title.html)` でリンクしていましたが、
+`{% raw %}[タイトル]({% post_url YYYY-MM-DD-title %}){% endraw %}`
+のように `post_url` を使う書き方に変えました。
