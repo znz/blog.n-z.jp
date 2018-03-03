@@ -24,6 +24,7 @@ tags: ruby rails
  data-file="env_ltsv_each.rb"
  layout="fixed-height"
  height="901">
+ <a href="https://gist.github.com/znz/849166c048a2117c341d#file-env_ltsv_each-rb">env_ltsv_each.rb</a>
 </amp-gist>
 
 ## 詳細
