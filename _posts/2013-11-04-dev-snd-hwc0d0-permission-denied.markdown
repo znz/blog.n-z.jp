@@ -63,7 +63,7 @@ audio グループに属しているか、コンソールから直接ログイ�
 `sound/pci/hda/hda_hwdep.c` で以下のように
 `CAP_SYS_RAWIO` をみていることがわかりました。
 
-sound/pci/hda/hda_hwdep.c:
+<p class="filename">sound/pci/hda/hda_hwdep.c:</p>
 
 ```c
  static int hda_hwdep_open(struct snd_hwdep *hw, struct file *file)
@@ -91,7 +91,7 @@ sound/pci/hda/hda_hwdep.c:
 テストプログラムとはいえ、
 任意のパスを受け取れるようにするのは止めた方が良さそうに思いました。
 
-open-hwC0D0.c:
+<p class="filename">open-hwC0D0.c:</p>
 
 ```c
  #include <sys/types.h>

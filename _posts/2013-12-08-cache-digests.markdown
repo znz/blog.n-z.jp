@@ -22,7 +22,7 @@ Rails 4.0 では標準になっているはずなので、
 
 まず `Gemfile` に以下の gem の指定を追加してインストールしました。
 
-Gemfile:
+<p class="filename">Gemfile:</p>
 
 ```ruby
 gem 'cache_digests'
@@ -36,7 +36,7 @@ gem 'dalli', group: :production
 ちゃんとキャッシュで来ているかどうかの確認や削除がしやすいように
 保存先はデフォルトの `:file_store` のままにしています。
 
-config/environments/development.rb:
+<p class="filename">config/environments/development.rb:</p>
 
 ```ruby
   config.action_controller.perform_caching = true
@@ -46,7 +46,7 @@ config/environments/development.rb:
 `dalli` の設定はこの記事の本題ではないので、
 `memcached` の設定などは他のサイトを参考にしてください。
 
-config/environments/production.rb:
+<p class="filename">config/environments/production.rb:</p>
 
 ```ruby
   config.cache_store = :dalli_store
@@ -61,7 +61,7 @@ config/environments/production.rb:
 `app/views/posts/_post.html.haml` のような view を使って
 `render @comments` や `render @posts` のように使っていたので、
 
-app/views/comments/_comment.html.haml:
+<p class="filename">app/views/comments/_comment.html.haml:</p>
 
 ```haml
 - cache comment do
@@ -75,7 +75,7 @@ app/views/comments/_comment.html.haml:
 
 `log/developement.log` などを `fragment` で検索してみると
 
-log/developement.log:
+<p class="filename">log/developement.log:</p>
 
 ```text
 Write fragment views/comments/29-20130905083500/96f0ec0ce36af8132826f3bfbe0079db 0.5ms
@@ -109,7 +109,7 @@ view のファイルが変更したり、
 さらに以下のように `belongs_to` に `touch: true` を付けて、
 コメントが付いた時に `post` の `updated_at` も更新されるようにしました。
 
-app/models/comment.rb:
+<p class="filename">app/models/comment.rb:</p>
 
 ```ruby
   belongs_to :commentable, polymorphic: true, touch: true

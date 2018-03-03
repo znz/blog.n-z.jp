@@ -58,7 +58,7 @@ static char *device = "default";
 Ubuntu ではパッチが当たっていて、
 標準で出てくるようになっているという話もありました。)
 
- ~/.asoundrc:
+<p class="filename">~/.asoundrc:</p>
  
 ```text
 defaults.namehint.extended on
@@ -140,7 +140,7 @@ other::---
 まず、 `grep -r snd /lib/udev/rules.d` でデバイスを作成している場所を
 探してみましたが、 `audio` グループに設定している箇所しか見つかりませんでした。
 
- /lib/udev/rules.d/91-permissions.rules:
+<p class="filename">/lib/udev/rules.d/91-permissions.rules:</p>
 
 ```text
 # sound devices
@@ -153,7 +153,7 @@ PAM が関係しているだろうという見当をつけて、
 `/etc/pam.d` を確認してみたところ、
 `common-session` の `pam_ck_connector` が関係してそうだと気付きました。
 
-/etc/pam.d/common-session:
+<p class="filename">/etc/pam.d/common-session:</p>
 
 ```text
 session	optional			pam_ck_connector.so nox11
@@ -165,7 +165,7 @@ session	optional			pam_ck_connector.so nox11
 もう一度 udev のルールを確認してみると `70-udev-acl.rules` で
 `udev-acl` というタグを設定していました。
 
- /lib/udev/rules.d/70-udev-acl.rules:
+<p class="filename">/lib/udev/rules.d/70-udev-acl.rules:</p>
 
 ```text
 # sound devices

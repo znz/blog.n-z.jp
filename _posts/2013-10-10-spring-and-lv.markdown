@@ -64,7 +64,7 @@ pager
 これはすぐに見つかって、
 `lv` の `src/stream.c` の `perror( "/dev/tty" )` でした。
 
-lv451/src/stream.c:
+<p class="filename">lv451/src/stream.c:</p>
 
 ```c
   close( 0 );

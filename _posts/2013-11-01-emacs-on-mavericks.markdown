@@ -29,7 +29,7 @@ Emacs のソースの以下の部分で `-psn` で始まる引数の有無で
 ホームディレクトリに移動するかどうかを判定しているのに、
 Mavericks だと引数なしで起動されるようになったからのようです。
 
-emacs-24.3/src/emacs.c:
+<p class="filename">emacs-24.3/src/emacs.c:</p>
 
 ```c
  #ifdef HAVE_NS
