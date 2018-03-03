@@ -5,6 +5,7 @@ date: 2014-06-25 21:37:22 +0900
 comments: true
 category: blog
 tags: ruby rails
+gist: true
 ---
 [環境変数にハッシュを入れたいと思って、ちょっと考えてみたら LTSV を使えば良いということに気づいた](https://twitter.com/znz/status/481691675136245760)ので、
 実装してみました。
