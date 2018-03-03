@@ -30,7 +30,7 @@ tags: linux ssh vagrant
 `Host *` の設定は例として書いているだけで、
 書かないことを推奨します。
 
-```text ~/.ssh/config
+```text
 HashKnownHosts no
 Host 127.0.0.1
 	Ciphers arcfour256,arcfour128
