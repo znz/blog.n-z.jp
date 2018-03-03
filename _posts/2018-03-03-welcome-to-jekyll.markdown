@@ -27,6 +27,9 @@ README にはられているスクリーンショットなどは履歴にいら�
 `categories: foo bar` を `category: blog` と `tags: foo bar` に変更して、
 URL が今まで通り `/blog/YYYY-MM-DD.html` になるように変更しました。
 
+`ruby -pi -e 'sub(/^categories:/, "category: blog\ntags:")' _posts/*.markdown`
+のように一括変換しました。
+
 ## Rabbit Slide Show 対応
 
 `{% raw %}{% include rabbit-slide.html author="znz" slide="slide-name" title="スライドのタイトル" %}{% endraw %}` のように include で使いまわせるようにして、 amp-iframe を埋め込むようにしました。
@@ -54,6 +57,9 @@ amp-iframe は https 必須のようで、 Rabbit Slide Show はすでに https 
 今までは生成されるパス決め打ちで `[タイトル](/blog/YYYY-MM-DD-title.html)` でリンクしていましたが、
 `{% raw %}[タイトル]({% post_url YYYY-MM-DD-title %}){% endraw %}`
 のように `post_url` を使う書き方に変えました。
+
+`{% raw %}ruby -pi -e 'sub(%r(/blog/(\d+-\d+-\d+-.+?)\.html), "{% post_url \\1 %}")' _posts/*.markdown{% endraw %}`
+のように一括変換しました。
 
 ## タグクラウド
 
