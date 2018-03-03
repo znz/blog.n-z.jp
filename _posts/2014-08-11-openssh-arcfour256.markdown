@@ -9,7 +9,7 @@ tags: linux ssh vagrant
 [大容量ファイルのSCP転送を高速にする方法 - 元RX-7乗りの適当な日々](http://d.hatena.ne.jp/rx7/20101025/p1 "大容量ファイルのSCP転送を高速にする方法 - 元RX-7乗りの適当な日々")
 をみて、安全な可能性が高い経路だけ `arcfour256` のような高速な `Ciphers` を使いたいと思って、そうなるように設定しました。
 
-[VirtualBoxでdokkuを試した]({{ root_url }}{% post_url 2013-11-15-dokku %} "VirtualBoxでdokkuを試した")
+[VirtualBoxでdokkuを試した]({% post_url 2013-11-15-dokku %} "VirtualBoxでdokkuを試した")
 での設定は意図通りには動いていませんでした。
 
 <!--more-->

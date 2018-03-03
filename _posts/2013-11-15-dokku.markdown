@@ -115,7 +115,7 @@ VM 用には速いものを使うようにしています。</s>
 
 2014-08-11 追記:
 これは意図通りではありませんでした。
-[vagrantなどのローカルへのssh接続のみarcfour256で高速化する]({{ root_url }}{% post_url 2014-08-11-openssh-arcfour256 %} "vagrantなどのローカルへのssh接続のみarcfour256で高速化する")
+[vagrantなどのローカルへのssh接続のみarcfour256で高速化する]({% post_url 2014-08-11-openssh-arcfour256 %} "vagrantなどのローカルへのssh接続のみarcfour256で高速化する")
 で訂正記事を書いています。
 
 ## VirtualBox のポートフォワーディング設定
