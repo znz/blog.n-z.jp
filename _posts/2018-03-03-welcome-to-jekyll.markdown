@@ -35,6 +35,15 @@ URL が今まで通り `/blog/YYYY-MM-DD.html` になるように変更しまし
 `http://example.com/` のように直接書いていてもリンクになっていたものが、リンクにならなくなったので、
 `<http://example.com/>` のように `<>` でくくるようにしました。
 
+## エスケープ追加
+
+octopress だとコードブロックの中は `{{ "{{" }}` が自動でエスケープされてそのまま書けましたが、
+jekyll 直接だと自動でエスケープされないので、
+`{{ "{%" }} raw %}` と `{{ "{%" }} endraw %}`
+を追加する必要がありました。
+
+[octopress で ansible の記事を書く時のエスケープ]({% post_url 2014-05-20-octopress-ansible %}) の方法もそのまま使えました。
+
 ## Rabbit Slide Show 対応
 
 `{% raw %}{% include rabbit-slide.html author="znz" slide="slide-name" title="スライドのタイトル" %}{% endraw %}` のように include で使いまわせるようにして、 amp-iframe を埋め込むようにしました。
