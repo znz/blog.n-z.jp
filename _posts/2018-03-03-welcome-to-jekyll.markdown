@@ -1,25 +1,40 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "OctopressからJekyllに移行しました"
 date:   2018-03-03 10:00:03 +0900
-categories: jekyll update
+category: blog
+tags: jekyll
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+octopress が 3 系列の開発は止まっているようで、Jekyll は 3 系列なら直接使っても良さそうな感じだという話をみていたので、頑張って移行することにしました。
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<!--more-->
 
-Jekyll also offers powerful support for code snippets:
+## jekyll を始める
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+github-pages gem は jekyll が 3.6.2 と古い (最新は 3.7.3) ことと独自ドメインで https に対応するのに、 GitHub Pages + CloudFlare よりも Netlify を使って見たかったこともあり、 jekyll gem を直接使うことにしました。
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+せっかくなので AMP (Accelerated Mobile Page) に対応したいと思って [Amplify for Jekyll](https://github.com/ageitgey/amplify) をテーマとして使うことにしました。
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+README にはられているスクリーンショットなどは履歴にいらないなと思って、 `jekyll new blog` で新規作成してから、 amplify のファイルをコピーしてはじめました。
+
+## Rabbit Slide Show 対応
+
+`{% raw %}{% include rabbit-slide.html author="znz" slide="slide-name" title="スライドのタイトル" %}{% endraw %}` のように include で使いまわせるようにして、 amp-iframe を埋め込むようにしました。
+
+初期の頃は slideshare も埋め込んでいましたが、こちらはやめました。
+
+amp-iframe は https 必須のようで、 Rabbit Slide Show はすでに https 対応していたので、 https で埋め込むように変更しました。
+
+## 画像対応
+
+[amp-jekyll](https://github.com/juusaw/amp-jekyll) に fastimage gem で画像サイズを自動で埋め込んでくれるフィルターがあったので、
+`Gemfile` に依存する nokogiri gem と fastimage gem を追加して、
+`_plugins/amp_filter.rb` にフィルターを取り込んで、
+`_layouts/page.html` と `_layouts/post.html` の `{% raw %}{{content}}{% endraw %}` を `{% raw %}{{ content | amp_images }}{% endraw %}` に変更しました。
+
+これで画像自体は、
+`{% raw %}![キャプション]({{ "/assets/images/screenshot.png" | relative_url }}){% endraw %}`
+で埋め込めるようになりました。
+
+`absolute_url` だと画像サイズがとれなかったので、
+`relative_url` にする必要がありそうです。
