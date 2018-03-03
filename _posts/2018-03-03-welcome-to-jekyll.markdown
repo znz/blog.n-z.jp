@@ -44,3 +44,13 @@ amp-iframe は https 必須のようで、 Rabbit Slide Show はすでに https 
 今までは生成されるパス決め打ちで `[タイトル](/blog/YYYY-MM-DD-title.html)` でリンクしていましたが、
 `{% raw %}[タイトル]({% post_url YYYY-MM-DD-title %}){% endraw %}`
 のように `post_url` を使う書き方に変えました。
+
+## タグクラウド
+
+jekyll-tagging gem を使って、タグごとのページの生成と `_layouts/post.html` の post-meta の中に tags の追加をしました。
+gem を入れればデフォルトで良い感じにしてくれるわけではなく、
+layout などは自分でなんとかする必要がありました。
+
+URL が `/blog/categories/タグ` から `/tag/タグ.html` に変わってしまうので、
+[Jekyll + Netlify でのリダイレクト](https://qiita.com/gatespace/items/accb418239a45834d529) などを参考にして、
+`_redirects` ファイルを用意しました。
