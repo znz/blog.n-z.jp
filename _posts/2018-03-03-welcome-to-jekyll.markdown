@@ -91,3 +91,8 @@ URL が `/blog/categories/タグ` から `/tag/タグ.html` に変わってし�
 amp-iframe のファーストビューの領域の75%よりも下、または最上部から600pxより下という制限にひっかかって、
 読書会のエントリーの最初に対象の書籍を埋め込んでいたのがエラーになったので、
 iframe から `_includes/amazon.html` の amp-iframe に変更すると共に末尾に移動しました。
+
+## gist 埋め込み
+
+gist は jekyll-gist ではなく、
+amp-gist を使うことでうまく埋め込めました。
