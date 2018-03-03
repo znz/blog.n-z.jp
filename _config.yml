@@ -13,22 +13,23 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Awesome Site Title
-email: your-email@domain.com
+title: "@znz blog"
+email: "zn@mbf.nifty.com"
 description: >- # this means to ignore newlines until "baseurl:"
-  Awesome site description here
-logo: "/assets/images/logo.jpg"
+  ZnZ の memo のようなもの
+logo: "/assets/images/znz.png"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-paginate:	5 # The number of posts to show per page on your homepage
+url: "http://blog.n-z.jp" # the base hostname & protocol for your site, e.g. http://example.com
+paginate: 10 # The number of posts to show per page on your homepage
 
-name: 'Your Name'
+name: 'Kazuhiro NISHIYAMA'
 bio: >
-  Mea suas vituperatoribus et, virtute corpora quaestio cum ut.
-  Ne solet nostrum complectitur pri, vis ut inani populo.
-author_image: "/assets/images/author.jpg"
-twitter_username: jekyllrb
-github_username:  jekyll
+  <a href="https://github.com/ruby/ruby/graphs/contributors">Ruby のコミッター</a>とかやってます。
+  フルスタックエンジニア(って何?)かもしれません。
+  <a href="https://www.n-z.jp/me.html">About znz</a>に主なアカウントをまとめました。
+author_image: "/assets/images/znz.png"
+twitter_username: znz
+github_username:  znz
 
 # Google Analytics
 analytics_id: ""
