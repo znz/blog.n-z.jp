@@ -1,11 +1,3 @@
-スライドはいつも通り [Rabbit Slide Show](https://slide.rabbit-shocker.org/authors/{{ include.author }}/{{ include.slide }}/) ([RubyGems](https://rubygems.org/gems/rabbit-slide-{{ include.author }}-{{ include.slide }})), [SlideShare](http://www.slideshare.net/{{ include.slideshare }}), [Speaker Deck](https://speakerdeck.com/{{ include.speakerdeck }}) にあげています。
+スライドはいつも通り [Rabbit Slide Show](https://slide.rabbit-shocker.org/authors/{{ include.author }}/{{ include.slide }}/) ([RubyGems](https://rubygems.org/gems/rabbit-slide-{{ include.author }}-{{ include.slide }})), [SlideShare](http://www.slideshare.net/{{ include.slideshare }}), [Speaker Deck](https://speakerdeck.com/{{ include.speakerdeck }}) にあげています。(ソースは [github](https://github.com/{{ include.author }}/{{ include.slide }}) にあげています。)
 
-<amp-iframe src="https://slide.rabbit-shocker.org/authors/{{ include.author }}/{{ include.slide }}/viewer.html"
-            width="640" height="524"
-	    sandbox="allow-scripts allow-same-origin"
-            scrolling="no"
-            allowfullscreen>
-</amp-iframe>
-<div>
-  <a href="https://slide.rabbit-shocker.org/authors/{{ include.author }}/{{ include.slide }}/" title="{{ include.title }}">{{ include.title }}</a>
-</div>
+{% include rabbit-slide.html author="{{ include.author }}" slide="{{ include.slide }}" title="{{ include.title }}" %}
