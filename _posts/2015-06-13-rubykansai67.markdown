@@ -1,0 +1,87 @@
+---
+layout: post
+title: "第67回 Ruby関西 勉強会に参加しました"
+date: 2015-06-13 13:23:57 +0900
+comments: true
+category: blog
+tags: event ruby rubykansai
+---
+[第67回 Ruby関西 勉強会](https://rubykansai.doorkeeper.jp/events/23266 "第67回 Ruby関西 勉強会")
+に参加しました。
+([KansaiWorkshop067](https://github.com/rubykansai/workshops/wiki/Kansaiworkshop067))
+
+今回は京都女子大学での開催でした。
+
+<!--more-->
+
+## ドメイン駆動設計とRuby
+
+- [DDD Infinite](https://speakerdeck.com/ogom/ddd-infinite)
+- [Markdown で書ける自作プレゼンツール](http://ogom.github.io/python-mcider/)を使っている
+- Sublime Text との関係の都合で Python 製
+
+## ある教育系のサービスを開発してきた裏側
+
+<div class="amazon pull-right">
+{% include amazon.html src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=znz-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4863541686&linkId=3e0bcd784b2be7fedb2d20a60db61879" %}
+{% include amazon.html src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=znz-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4873116309&linkId=38c9badc57aae2928346adc2739b3dff" %}
+</div>
+
+- 会場アンケート からあげ好き ほぼ100%
+- 本を書いたらしい: [Webエンジニアの教科書](http://amzn.to/2oMEJwj)
+- Classi
+- Slack のカスタム絵文字を絵文字職人がいつの間にか作っている
+- Qiita:Team (esa という似たサービスが最近出てきたらしい)
+- 朝会
+- GitHub でのレビュー
+- [Team Geek ―Googleのギークたちはいかにしてチームを作るのか](http://amzn.to/2H16gBt)の「自分の疑問として謙虚に聞く」
+- チームランチ
+
+## Ruby で操る AWS
+
+<div class="amazon pull-right">
+{% include amazon.html src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=znz-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4797380357&linkId=400304de3a18e9c330102811e14646c7" %}
+{% include amazon.html src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=znz-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00UWCYRZK&linkId=5f59045269a33189d04ade7270a6fe1c" %}
+</div>
+
+- [Rubyで操るAWS 第67回Ruby関西 勉強会](http://www.slideshare.net/takurosasaki/rubyaws-67ruby "Rubyで操るAWS 第67回Ruby関西 勉強会")
+- 本をいくつか書いている
+- 会場アンケート どの項目も意外と多い
+- クラウドファースト
+- クラウドネイティブ
+- 3-Tier アーキテクチャ
+- 2-Tier アーキテクチャ
+- [モバイル会議Ⅱ](http://www.nri-net.com/mobileconf/spec.html)
+- Ruby で AWS
+- SDK V1 (レガシーバージョン) V2 (現行バージョン)
+- 名前空間が V1 は AWS で V2 は Aws なので AWS になっている情報は古い
+- 認可は IAM
+- 認証は 3 種類
+- AccessKey と SecretAccessKey による認証
+- IAM ロール
+- Cognito
+- Lambda
+
+## 正規表現の \z の話
+
+自分の発表 (LT) でした。
+
+- 1文字の場合は選択 `(ん|ン)` ではなく文字クラス `[んン]` を使おう
+- 文字列末尾は `$` ではなく `\z`
+
+{% include rabbit-slide.html author="znz" slide="rubykansai67-regexp" title="正規表現の \z の話" %}
+
+## Ruby初級者向けレッスン 53回───ArrayとHash
+
+- `Array.new(3){|i| i.to_s}` のようなブロック付き `Array.new` って使ったことがなかったけど、テストデータを作るのに便利そう。
+- `Array#to_h` っていつからあるんだっけ、と思って確認したら 2.1.0 からだった。
+- <https://github.com/higaki/learn_ruby_kansai_67>
+
+## クロージング
+
+- 8/7(金)-8(土) [オープンソースカンファレンス2015 Kansai@Kyoto](http://www.ospn.jp/osc2015-kyoto/ "オープンソースカンファレンス2015 Kansai@Kyoto")
+- 関西のたくさんある Ruby 勉強会の紹介
+- 7/9(木) Ruby ビジネスフォーラム
+- 7/10(金) 関西Ruby会議06 前夜祭
+- 7/11(土) [関西Ruby会議06](http://regional.rubykaigi.org/kansai06/)
+- 8/8(土) [第68回 Ruby関西 勉強会](https://rubykansai.doorkeeper.jp/events/25693)
