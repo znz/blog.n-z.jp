@@ -25,6 +25,7 @@ macOS を日本語環境で使っていれば `brew cask install libreoffice-lan
 ## ダウンロードが遅い場合
 
 日本のミラーのひとつの <http://www.ftp.ne.jp/> が「 **(2017/12/21)** *ftp-srv2 is down currently*, because the network equipment for ftp-srv2 has been broken from 2017/12/19. In addition, ftp is too heavy load. Please use the other sites for archive downloads. We are trying to replace the network equipment.」と書いてあるように非常に重いので、ダウンロードが非常に遅い場合があるかもしれません。
+(2018-03-04追記: 「 **(2018/02/03)** *ftp-srv2 was recovered* at 2018/02/02, because the replacement of network equipment was completed. We restarted http redirections from ftp to ftp-srv2. 」と書いてあったので今は大丈夫そうです。)
 その場合は、公式サイトから手動でミラーを選択してダウンロードした `LibreOffice_5.4.4_MacOS_x86-64.dmg` を `~/Library/Caches/Homebrew/Cask/libreoffice--5.4.4.dmg` におきます。
 Cache に置く時のファイル名は、ダウンロードを中断したら `~/Library/Caches/Homebrew/Cask/libreoffice--5.4.4.dmg.incomplete` があるはずなので `.incomplete` を削ったファイル名にします。
 その上で `brew cask install` を再度実行すると、ダウンロード済みのファイルが使われます。
