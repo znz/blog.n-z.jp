@@ -126,7 +126,7 @@ ID が運転免許証しかなかったので、日本人とだけにしてお�
 
 Certbotで無料TLSサーバーというタイトルで発表しました。
 
-{% include rabbit-slide.html author="znz" slide="debian-certbot" title="Certbotで無料TLSサーバー" %}
+{% include slides.html author="znz" slide="debian-certbot" title="Certbotで無料TLSサーバー" slideshare="znzjp/certbottls" speakerdeck="znz/certbotdewu-liao-tlssaba" github="znz/mini-debian-conf-japan-2016-certbot" %}
 
 <https://github.com/sorah/acmesmith> というクライアントもあるらしい。
 
