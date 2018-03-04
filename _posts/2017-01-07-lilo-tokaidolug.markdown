@@ -42,4 +42,4 @@ tags: lilo event linux
 
 ## 発表した内容
 
-{% include slides.html author="znz" slide="lilo-20170107" title="lilo.linux.or.jp の話 (2017年1月)" slideshare="znzjp/lilolinuxorjp-20171" speakerdeck="u/znz/p/lilo-dot-linux-dot-or-dot-jp-falsehua-2017nian-1yue" %}
+{% include slides.html author="znz" slide="lilo-20170107" title="lilo.linux.or.jp の話 (2017年1月)" slideshare="znzjp/lilolinuxorjp-20171" speakerdeck="u/znz/p/lilo-dot-linux-dot-or-dot-jp-falsehua-2017nian-1yue" github="znz/lilo-20170107" %}

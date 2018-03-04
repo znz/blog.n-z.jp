@@ -87,4 +87,4 @@ tags: lilo event linux
 
 内容は大きく分けると jessie にあげた話、二要素認証を導入した話、 letsencrypt の証明書を導入した話でした。
 
-{% include slides.html author="znz" slide="lilo-20160501" title="lilo.linux.or.jp を wheezy から jessie にあげた話" slideshare="znzjp/lilo-20160501" speakerdeck="znz/lilo-dot-linux-dot-or-dot-jp-from-wheezy-to-jessie" %}
+{% include slides.html author="znz" slide="lilo-20160501" title="lilo.linux.or.jp を wheezy から jessie にあげた話" slideshare="znzjp/lilo-20160501" speakerdeck="znz/lilo-dot-linux-dot-or-dot-jp-from-wheezy-to-jessie" github="znz/lilo-20160501" %}
