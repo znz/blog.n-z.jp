@@ -1,4 +1,5 @@
 ---
 layout: null
 ---
+/atom.xml /feed.xml
 /blog/categories/* /tag/:splat.html
