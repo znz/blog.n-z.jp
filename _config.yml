@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   ZnZ の memo のようなもの
 logo: "/assets/images/znz.png"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog.n-z.jp" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.n-z.jp" # the base hostname & protocol for your site, e.g. http://example.com
 paginate: 10 # The number of posts to show per page on your homepage
 
 name: 'Kazuhiro NISHIYAMA'
