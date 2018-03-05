@@ -5,18 +5,20 @@
   {%- if page.gist -%}
   <script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
   {%- endif -%}
-  {% comment %}
+  {%- if jekyll.environment == 'production' and site.analytics_id != '' -%}
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  {% endcomment %}
-  <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+  {% endif %}
+  {%- if jekyll.environment == 'production' -%}
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+  {% endif %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-{% if jekyll.environment != 'production' %}
+{%- if jekyll.environment != 'production' -%}
   <meta name="robots" content="noindex">
-{% endif %}
+{%- endif -%}
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">

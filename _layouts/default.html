@@ -6,8 +6,8 @@
 
     {{ content }}
 
-    {% comment %}
-        {% include analytics.html %}
-    {% endcomment %}
+    {%- if jekyll.environment == 'production' and site.analytics_id != '' -%}
+      {% include analytics.html %}
+    {% endif %}
   </body>
 </html>
