@@ -1,6 +1,6 @@
 [context.production.environment]
 JEKYLL_ENV = "production"
 [context.deploy-preview.environment]
-JEKYLL_ENV = "staging"
+JEKYLL_ENV = "preview"
 [context.branch-deploy.environment]
 JEKYLL_ENV = "staging"
