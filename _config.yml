@@ -55,6 +55,7 @@ jekyll-minifier:
   exclude: '*.xml'
 
 include:
+- "_headers"
 - "_redirects"
 
 # Exclude from processing.
