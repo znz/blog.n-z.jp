@@ -52,7 +52,7 @@ tag_page_dir: tag
 tag_permalink_style: pretty
 
 jekyll-minifier:
-  exclude: 'feed.xml'
+  exclude: '*.xml'
 
 include:
 - "_redirects"
