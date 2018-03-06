@@ -2,6 +2,7 @@
 layout: post
 title:  "OctopressからJekyllに移行しました"
 date:   2018-03-03 10:00:03 +0900
+comments: true
 category: blog
 tags: jekyll
 ---
