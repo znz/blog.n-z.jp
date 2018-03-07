@@ -4,7 +4,7 @@ title:  "OctopressからJekyllに移行しました"
 date:   2018-03-03 10:00:03 +0900
 comments: true
 category: blog
-tags: jekyll
+tags: jekyll amp
 ---
 octopress が 3 系列の開発は止まっているようで、Jekyll は 3 系列なら直接使っても良さそうな感じだという話をみていたので、頑張って移行することにしました。
 
