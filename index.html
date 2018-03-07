@@ -14,18 +14,7 @@ layout: default
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
         <div class="article-item">
           <header class="post-header">
-            <h2 class="post-title" itemprop="name">
-              <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a>
-              {%- if jekyll.environment == 'production' -%}
-                <a href="http://b.hatena.ne.jp/entry/{{ site.baseurl }}{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-                  <amp-img
-                    src="http://b.hatena.ne.jp/entry/image/{{ site.baseurl }}{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
-                    alt="はてなブックマーク - {{ post.title | escape }}" title="はてなブックマーク - {{ post.title | escape }}"
-                    width="41" height="13">
-		  </amp-img>
-                </a>
-              {%- endif -%}
-            </h2>
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
           </header>
           <section class="post-excerpt" itemprop="description">
             <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
