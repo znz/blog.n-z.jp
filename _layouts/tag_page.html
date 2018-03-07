@@ -12,6 +12,7 @@ layout: page
           src="http://b.hatena.ne.jp/entry/image/{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
           alt="はてなブックマーク - {{ post.title | escape }}" title="はてなブックマーク - {{ post.title | escape }}"
           width="41" height="13">
+        </amp-img>
       </a>
     {%- endif -%}
     ({{ post.date | date_to_string }} | Tags: {{ post | tags }})
