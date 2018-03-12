@@ -80,6 +80,7 @@ tags: event docker
 
 ## LT枠3『Dockerを使ったクライアントハイパーバイザー』
 
+- トラブルでスライドが表示されなかった: あとで公開された[発表資料](https://www.slideshare.net/kunst1080/docker-90385544)
 - デスクトップ用途で docker を使っている話
 - パッケージの更新の手間を省きたい
 - ホストは Ubuntu 16.04
