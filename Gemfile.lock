@@ -33,6 +33,9 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-compose (0.7.0)
       jekyll (~> 3.0)
+    jekyll-last-modified-at (1.0.1)
+      jekyll (~> 3.3)
+      posix-spawn (~> 0.3.9)
     jekyll-minifier (0.1.5)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.3)
@@ -60,6 +63,7 @@ GEM
     nuggets (1.5.0)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
+    posix-spawn (0.3.13)
     public_suffix (3.0.2)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
@@ -82,6 +86,7 @@ DEPENDENCIES
   fastimage
   jekyll
   jekyll-compose
+  jekyll-last-modified-at
   jekyll-minifier
   jekyll-paginate
   jekyll-sitemap

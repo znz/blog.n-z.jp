@@ -7,6 +7,7 @@ layout: default
       <h1 class="post-title">{{ page.title }}</h1>
       <div>Tags: {{ page | tags }}</div>
       <div>Created at: {{ page.date | date: "%Y-%m-%d %H:%M:%S" }}</div>
+      <div>Last modified at: {{ page.last_modified_at | date: "%Y-%m-%d %H:%M:%S" }}</div>
     </div>
 
     <section class="post-content">
