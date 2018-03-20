@@ -49,12 +49,6 @@ plugins:
 permalink: /:categories/:year-:month-:day-:title.html
 strict_front_matter: true
 
-defaults:
-- scope:
-    path: "tag/"
-  values:
-    sitemap: false
-
 # jekyll-tagging
 tag_page_layout: tag_page
 tag_page_dir: tag
