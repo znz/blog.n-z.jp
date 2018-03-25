@@ -5,6 +5,9 @@
   {%- if page.gist -%}
   <script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
   {%- endif -%}
+  {%- if page.twitter -%}
+  <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+  {%- endif -%}
   {%- if jekyll.environment == 'production' and site.analytics_id != '' -%}
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   {%- endif -%}
