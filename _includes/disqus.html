@@ -1,3 +1,4 @@
+{%- if jekyll.environment == 'production' -%}
 <amp-iframe width=600 height=140
             layout="responsive"
             sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
@@ -5,3 +6,4 @@
             src="https://cdn.rawgit.com/znz/blog.n-z.jp/1d5c7e5949ec913739b8544d79d9bdca9fa365c9/_disqus.html#{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <div overflow tabindex=0 role=button aria-label="Disqus Comments">Disqus Comments</div>
 </amp-iframe>
+{%- endif -%}
