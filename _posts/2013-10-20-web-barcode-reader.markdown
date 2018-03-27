@@ -135,4 +135,4 @@ video
 * [WebBarcodeReaderのCoffeeScript部分のソース](https://gum.co/egEG)
 * [WebBarcodeReaderのRailsプロジェクト全体のソース](https://gum.co/OSLo)
 
-<script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
+<!--script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script-->
