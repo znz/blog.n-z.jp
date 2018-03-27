@@ -3,3 +3,7 @@ layout: null
 ---
 /atom.xml /feed.xml
 /blog/categories/* /tag/:splat
+/blog/page/* /
+/blog/2014-07-08-devise-omniauth.html /blog/2014-07-07-devise-omniauth.html
+/blog/2017-04-18-mastodon-api-curl.html /blog/2017-04-17-mastodon-api-curl.html
+/blog/2017-12-03-shellcheck.html /blog/2017-12-02-shellcheck.html
