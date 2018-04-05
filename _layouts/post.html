@@ -14,6 +14,8 @@ layout: default
       <a name="topofpage"></a>
       {{ content | amp_images }}
     </section>
+    {% include adsense.html %}
+    {% include disqus.html %}
     <footer class="post-footer">
       <section class="share">
         <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter_username }}" target="_blank">
@@ -23,8 +25,6 @@ layout: default
         {% include social-share.html %}
       </section>
     </footer>
-    {% include adsense.html %}
-    {% include disqus.html %}
     <div class="bottom-teaser cf">
       <div class="isLeft">
         <h5 class="index-headline featured"><span>Written by</span></h5>
