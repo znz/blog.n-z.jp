@@ -2,6 +2,7 @@
 layout: post
 title: "Ruby X Elixir Conf Taiwan 2018の1日目に参加しました"
 date: 2018-04-27 21:13 +0800
+tags: event ruby taiwan
 ---
 [Ruby X Elixir Conf Taiwan 2018](https://2018.rubyconf.tw/) の1日目に参加しました。
 メインの部屋に電源がなくて、電源に不安があったので、メモはとっていません。

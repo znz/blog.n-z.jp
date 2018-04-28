@@ -2,6 +2,7 @@
 layout: post
 title: "Ruby X Elixir Conf Taiwan 2018に参加するために台湾に移動しました"
 date: 2018-04-26 23:59 +0800
+tags: travel taiwan
 ---
 [Ruby X Elixir Conf Taiwan 2018](https://2018.rubyconf.tw/) に参加するために台湾に移動しました。
 
@@ -81,3 +82,7 @@ iPod touch も Anroid スマホも macOS もタイムゾーンが自動で切り
 ## テレビ
 
 宿のテレビは bbtv というのが入っていて、テレビ自体の起動も日本の地デジより遅くて、なんだこれ、と思ってしまいました。
+
+## 気候
+
+外は予想通り日本より暖かかったのですが、屋内は冷房がきいていて、羽織るものがないとちょっと寒いことが多い感じがしました。
