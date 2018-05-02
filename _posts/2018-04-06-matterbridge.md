@@ -41,13 +41,13 @@ nadoka jp や ruby-ja は最近ほぼ発言なしなので、
 Server="chat.freenode.net:6697"
 Password=""
 UseTLS=true
-Charset=""
+Charset="utf-8"
 Nick="mattaribridge"
 RemoteNickFormat="<{NICK}> "
 
 [irc.ircnet]
 Server="localhost:6668"
-Charset=""
+Charset="utf-8"
 Nick="mattaribridge"
 RemoteNickFormat="<{NICK}> "
 
@@ -74,6 +74,8 @@ channel="#ruby-ja"
 account="irc.ircnet"
 channel="#ruby-ja"
 ```
+
+2018-05-02追記: `Charset=""` だと自動認識になって、たとえば「名古屋」が windows-1252 と誤認識されて文字化けする、ということが起きていたので、 `Charset="utf-8"` に修正しました。
 
 ## mattaribridge の IRC での挙動
 
