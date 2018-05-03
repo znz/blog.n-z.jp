@@ -2,6 +2,8 @@
 layout: post
 title: "Ruby X Elixir Conf Taiwan 2018の2日目に参加しました"
 date: 2018-04-28 22:22 +0800
+comments: true
+category: blog
 tags: event ruby taiwan
 ---
 [Ruby X Elixir Conf Taiwan 2018](https://2018.rubyconf.tw/) の2日目に参加しました。

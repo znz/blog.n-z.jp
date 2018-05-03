@@ -2,6 +2,8 @@
 layout: post
 title: "第 134 回 関西 Debian 勉強会に参加しました"
 date: 2018-04-22 14:00 +0900
+comments: true
+category: blog
 tags: debian event
 ---
 [第 134 回 関西 Debian 勉強会](https://wiki.debian.org/KansaiDebianMeeting/20180422) に参加しました。

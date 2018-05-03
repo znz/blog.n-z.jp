@@ -2,6 +2,8 @@
 layout: post
 title: "Ruby X Elixir Conf Taiwan 2018に参加するために台湾に移動しました"
 date: 2018-04-26 23:59 +0800
+comments: true
+category: blog
 tags: travel taiwan
 ---
 [Ruby X Elixir Conf Taiwan 2018](https://2018.rubyconf.tw/) に参加するために台湾に移動しました。
