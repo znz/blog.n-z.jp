@@ -15,7 +15,7 @@ tags: rabbit
 - macOS High Sierra 10.13.4
 - ruby 2.5.1
 - rabbit 2.2.1
-- poppler 0.64.0
+- poppler 0.64.0 (2018-05-22 追記: 0.65.0 でも同様)
 
 ## 回避策
 
