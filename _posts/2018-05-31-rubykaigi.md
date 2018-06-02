@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "RubyKaigi 2018 に参加しました"
+title: "RubyKaigi 2018の1日目に参加しました"
 date: 2018-05-31 22:22 +0900
 comments: true
 category: blog
 tags: event ruby rubykaigi
 ---
-[RubyKaigi 2018](http://rubykaigi.org/2018/) に参加したので、
+[RubyKaigi 2018](http://rubykaigi.org/2018/) に1日目に参加したので、
 そのメモです。
 
 <!--more-->
