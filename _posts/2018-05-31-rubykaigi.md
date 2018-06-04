@@ -9,6 +9,10 @@ tags: event ruby rubykaigi
 [RubyKaigi 2018](http://rubykaigi.org/2018/) に1日目に参加したので、
 そのメモです。
 
+発表資料へのリンクは
+るびまの[RubyKaigi 2018 直前特集号](https://magazine.rubyist.net/articles/prerubykaigi2018/preRubyKaigi2018-index.html)
+が RubyKaigi 2018 後にも更新されていて、非常に便利です。
+
 <!--more-->
 
 ## OTCBTC のスポンサーセッション
@@ -211,8 +215,8 @@ BTC というところか連想できるように暗号通貨などを取り扱�
 
 ## Lightning Talks
 
-横のタイマーの画面では、終わったら `raise TalkTimeoutError` と出ていた。
-交代の間は `talks.shift.ready?` と出ていた。
+横のタイマーの画面では、終わったら `raise TalkTimeoutError` と出ていました。
+交代の間は `talks.shift.ready?` と出ていました。
 
 ### From String#undump to String#unescape
 
@@ -243,6 +247,8 @@ BTC というところか連想できるように暗号通貨などを取り扱�
 
 ### Using Tamashii Connect Real World with Chatbot
 
+台湾の人の Tamashii という IoT 関連のソフトの使用例
+
 ### Find out potential dead codes from diff
 
 - 静的コード検査での dead code での問題点
@@ -261,13 +267,20 @@ WebSocket のテストの話
 
 ### 5-Minute Recipe of Todo-app
 
+ライブコーディング。
+ちょっと間に合わず。
+
 ### Symbolic Execution of Ruby Programs
 
-- KLEE
+KLEE というのを使っていた。
 
 ### Schrödinger's branch
 
 - ImageFlux
-- RUBY IS DEAD EVERY YEAR に内容を変更
+- RUBY IS DEAD EVERY YEAR にタイトルを変更 (内容は変わっていない?)
 - ブランチの説明
 - ruby\_2\_2 が EOL かどうか問題
+
+## Official Party
+
+初日は Official Party でした。

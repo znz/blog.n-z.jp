@@ -1,8 +1,17 @@
 ---
 layout: post
-title: rubykaigi
+title: "RubyKaigi 2018の3日目に参加しました"
 date: 2018-06-02 09:45 +0900
+comments: true
+category: blog
+tags: event ruby rubykaigi
 ---
+[RubyKaigi 2018](http://rubykaigi.org/2018/) の3日目に参加したので、
+そのメモです。
+
+発表資料へのリンクは
+るびまの[RubyKaigi 2018 直前特集号](https://magazine.rubyist.net/articles/prerubykaigi2018/preRubyKaigi2018-index.html)
+が RubyKaigi 2018 後にも更新されていて、非常に便利です。
 
 <!--more-->
 
@@ -62,5 +71,5 @@ MJIT の現状報告でした。
 
 ## Closing
 
-Fukuoka
-Apr 18th(thu)-20th(sat)
+- 1,017 Attendees = 千台
+- Next: Fukuoka, Apr 18th(thu)-20th(sat)

@@ -9,6 +9,10 @@ tags: event ruby rubykaigi
 [RubyKaigi 2018](http://rubykaigi.org/2018/) の2日目に参加したので、
 そのメモです。
 
+発表資料へのリンクは
+るびまの[RubyKaigi 2018 直前特集号](https://magazine.rubyist.net/articles/prerubykaigi2018/preRubyKaigi2018-index.html)
+が RubyKaigi 2018 後にも更新されていて、非常に便利です。
+
 <!--more-->
 
 ## SmartHR のスポンサーセッション
@@ -95,9 +99,8 @@ tags: event ruby rubykaigi
 
 ## Lunch Time
 
-小会議室4で Developer Meeting
-
-vs World の準備と ruby/spec の話
+- 今日も小会議室4で Developer Meeting
+- vs World の準備と ruby/spec の話でした。
 
 ## Guild Prototype
 
@@ -121,15 +124,22 @@ Steep の話。
 
 発表とは直接は関係ないけど、
 rurema には割と厳密に型が書いてあるんだから、
-なんとか流用できないものなのかなとずっと思っている。
-rdoc は適当にしか書いてなさそうなので、使えなさそうな印象がある。
+なんとか流用できないものなのかなとずっと思っています。
+rdoc は適当にしか書いてなさそうなので、使えなさそうな印象があります。
 
 ## Afternoon Break
 
 ## RubyData Sendai Workshop in RubyKaigi 2018
 
-- <https://github.com/RubyData/rubykaigi2018>
+セッション2つ分の時間のうちの前半は、
+<https://github.com/RubyData/rubykaigi2018> の README の通りに準備してブラウザーを開いた後は、
+rubykaigi2018 の中の Session1.ipynb を開いて titanic-passengers の CSV ファイルをダウンロードして RubyData/rubykaigi2018 の中において、
+In の横のところを選んで Shift+Enter で実行していく、
+という流れでした。
+
 - <https://github.com/SciRuby/daru/wiki/pandas-vs-daru>
+
+後半は LT でした。
 
 - <https://red-data-tools.github.io/ja/>
 - [#RubyKaigi 2018 LTで「Improve Red Chainer and Numo::NArray performance」というタイトルで発表しました。 - @naitohの日記](http://naitoh.hatenablog.com/entry/2018/06/01/120356)
