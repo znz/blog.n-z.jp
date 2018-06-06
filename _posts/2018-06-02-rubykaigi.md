@@ -21,9 +21,11 @@ tags: event ruby rubykaigi
 
 partial evaluation がすごかった。
 
-JIT があると C 実装のメソッドを Ruby で書き直すと速くなることもあるんだろうか。
+JIT があると C 実装のメソッドを Ruby で書き直すと速くなることもあるんだろうか、
+と思って見ていました。
+(後の k0kubun さんのセッションでそういう話もありました。)
 
-実装は大変そうだけど、中で自動でやってくれるのは良さそう。
+実装は大変そうだけど、中で自動でやってくれるのは良さそうでした。
 prallel の共有オブジェクトとか int だけしか入ってない配列から他のオブジェクトを入れると Object 用の配列とか。
 
 ## IRB Reboot: Modernize Implementation and Features
@@ -44,7 +46,11 @@ else
 end
 ```
 
-`puts(true)` の行で `*` になるのは行継続の意味なのでバグっている。
+`puts(true)` の行で `*` になるのは行継続の意味なのでバグっている、
+と発表中では言っていましたが、
+`when (3..)` にしないと endless range にならなくて
+`3..puts(true)` という range になるので、
+正しかったようです。
 
 ## The Method JIT Compiler for Ruby 2.6
 
@@ -68,8 +74,20 @@ MJIT の現状報告でした。
 ## TRICK 2018 (FINAL)
 
 - 警告網羅に挑戦すると面白いかも
+- 予約語並べ替えも頑張れば挑戦できそう
 
 ## Closing
 
 - 1,017 Attendees = 千台
 - Next: Fukuoka, Apr 18th(thu)-20th(sat)
+
+## After Party
+
+騒がしくて会話はしにくかったのですが、
+面識のなかった人とも話せてよかったです。
+
+途中から akr さんの話があったり、
+nobu さんのライブコミットがあったりして楽しめました。
+
+あの[謎コミット](http://d.hatena.ne.jp/nagachika/20180602/ruby_trunk_changes_63545_63557#r63557)で
+本当に `make commit` がなおっているのか気になります。

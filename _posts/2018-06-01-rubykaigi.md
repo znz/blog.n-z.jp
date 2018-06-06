@@ -137,6 +137,11 @@ rubykaigi2018 の中の Session1.ipynb を開いて titanic-passengers の CSV �
 In の横のところを選んで Shift+Enter で実行していく、
 という流れでした。
 
+実行結果が `#<CZTop::Socket::PUB:...>` のようになっているところは、
+正常に実行されると画像が出てくるので、
+慌てずに Shift+Enter を押した後、
+しばらく待つのが良いようです。
+
 - <https://github.com/SciRuby/daru/wiki/pandas-vs-daru>
 
 後半は LT でした。
@@ -145,3 +150,16 @@ In の横のところを選んで Shift+Enter で実行していく、
 - [#RubyKaigi 2018 LTで「Improve Red Chainer and Numo::NArray performance」というタイトルで発表しました。 - @naitohの日記](http://naitoh.hatenablog.com/entry/2018/06/01/120356)
 - [John Resig - Write Code Every Day](https://johnresig.com/blog/write-code-every-day/)
 - <https://github.com/red-data-tools/charty>
+
+## コード懇親会
+
+複数ある中で、お酒を飲まない人でも参加しやすそうだった
+[コード懇親会](https://speee.connpass.com/event/85676/)
+に参加してみました。
+
+一人で[るりま](https://github.com/rurema/doctree)関連のことをやっていればいいかと思っていたら、
+テーマが特にない人は他のチームに参加すれば良いということで、
+一人来てくれたので、
+[pull request ひとつ](https://github.com/rurema/doctree/pull/1277)
+を任せることができて、
+OSS Gate とはまた違った感じで contributor を増やせてよかったです。
