@@ -1,5 +1,34 @@
 {%- if jekyll.environment == 'production' -%}
+<!-- First we need to set up the amp-geo extension. We define a group: `eea` which includes all European Economic Area countries. You will need to keep this list up-to-date as membership in the EEA may change over time. -->
+<amp-geo layout="nodisplay">
+    <script type="application/json">
+     {
+	 "ISOCountryGroups": {
+             "eea": [ "at", "be", "bg", "cy", "cz", "de", "dk", "ee", "es", "fi", "fr",
+		      "gb", "gr", "hr", "hu", "ie", "is", "it", "li", "lt", "lu", "lv", "mt", "nl",
+		      "no", "pl", "pt", "ro", "se", "si", "sk"]
+	 }
+     }
+    </script>
+</amp-geo>
+
+<!-- Next we need to setup the consent for users in the “eea” country group -->
+<amp-consent layout="nodisplay" id="consent-element">
+    <script type="application/json">
+     {
+	 "consents": {
+             "my_consent": {
+		 "promptIfUnknownForGeoGroup": "eea",
+		 "promptUI": "myConsentFlow"
+             }
+	 }
+     }
+    </script>
+</amp-consent>
+
+<!-- Finally we set up the ad tag, directing it to wait for consent when necessary -->
 <amp-ad width="100vw" height=320
+        data-block-on-consent
         type="adsense"
         data-ad-client="ca-pub-4711975605457723"
         data-ad-slot="6145344757"
