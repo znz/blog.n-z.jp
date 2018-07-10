@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "amp-consentを追加した"
+title: "amp-consentを追加してAMP対応ページでGDPR対応した"
 date: 2018-07-10 23:34 +0900
 comments: true
 category: blog
