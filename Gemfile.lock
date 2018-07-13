@@ -60,7 +60,7 @@ GEM
     mini_portile2 (2.3.0)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
-    nuggets (1.5.0)
+    nuggets (1.6.0)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
     posix-spawn (0.3.13)
