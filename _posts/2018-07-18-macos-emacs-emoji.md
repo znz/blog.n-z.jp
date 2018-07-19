@@ -24,6 +24,14 @@ tags: osx emacs
 Symbola をダウンロードして展開して出てきた
 `Symbola.ttf` と `Symbola_Hinted.ttf` を `~/Library/Fonts` に入れました。
 
+2018-07-19 追記:
+`brew search symbola` してみると `homebrew/cask-fonts/font-symbola` があったので、
+Homebrew を使っているなら、
+`brew cask install homebrew/cask-fonts/font-symbola`
+で `~/Library/Fonts/Symbola_Hinted.ttf` にインストールできるようです。
+`Symbola.ttf` はインストールされなかったので、
+自分でダウンロードする場合も Hinted の方だけ入れれば良さそうです。
+
 ## 入力は変なことがある?
 
 スマイル(☺️)は問題なく入力も表示もできました。
