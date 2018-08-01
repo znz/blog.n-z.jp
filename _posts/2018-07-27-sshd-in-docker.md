@@ -15,6 +15,9 @@ X11Forwarding の準備をした上で、
 
 ## 検証環境
 
+- Docker Community Edition : 18.06.0-ce-mac70 (26399)
+  - Engine: 18.06.0-ce
+  - Compose 1.22.0
 
 ## 参考
 
@@ -62,7 +65,7 @@ RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so
 
 RUN apt-get install -y xauth
 RUN echo AddressFamily inet >> /etc/ssh/sshd_config
-#ADD authorized_keys /root/.ssh/authorized_keys
+#COPY authorized_keys /root/.ssh/authorized_keys
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
