@@ -12,3 +12,5 @@ layout: null
 /2018-04-26-rubyconftw.html /blog/2018-04-26-rubyconftw.html
 /2018-04-27-rubyconftw.html /blog/2018-04-27-rubyconftw.html
 /2018-04-28-rubyconftw.html /blog/2018-04-28-rubyconftw.html
+# Redirect default Netlify subdomain to primary domain
+https://blog-n-z-jp.netlify.com/* https://blog.n-z.jp/:splat 301!
