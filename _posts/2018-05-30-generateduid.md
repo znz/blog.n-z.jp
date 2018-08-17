@@ -2,6 +2,9 @@
 layout: post
 title: "謎のUUID(GeneratedUID)を調査した"
 date: 2018-05-30 13:55 +0900
+comments: true
+category: blog
+tags: osx
 ---
 wireshark のインストール中に出てきた FFFFEEEE-DDDD-CCCC-BBBB-AAAA00000000 について気になったので、
 調べてみました。
