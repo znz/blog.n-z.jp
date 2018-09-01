@@ -3,35 +3,10 @@
 require 'jekyll-last-modified-at/determinator'
 
 module SkipLastModifiedAt
-  TIME_CACHE = {}
-
-  def init_time_cache
-    TIME_CACHE['index.html'] = nil # jekyll-paginate
-    if is_git_repo?(site_source)
-      ::Jekyll::LastModifiedAt::Executor.sh(
-        'git',
-        '--git-dir',
-        top_level_git_directory,
-        'log',
-        *%w"-m -r --name-only --no-color --pretty=format:%ct -z",
-      ).each_line("\0\0", chomp: true) do |commit|
-        commit.sub!(/\A\d+\n/, '')
-        last_commit_date = $&.to_i
-        commit.split("\0").each do |file|
-          TIME_CACHE["#{site_source}/#{file}"] ||= last_commit_date
-        end
-      end
-    end
-  end
-
   def last_modified_at_time
-    return TIME_CACHE[page_path] if TIME_CACHE.key?(page_path)
-    if %r!\Atag/! =~ page_path # jekyll-tagging
-      TIME_CACHE[page_path] = nil
-      return
-    end
-    init_time_cache if TIME_CACHE.empty?
-    TIME_CACHE[page_path] = super
+    return if 'index.html' == page_path # jekyll-paginate
+    return if %r!\Atag/! =~ page_path # jekyll-tagging
+    super
   end
 
   def last_modified_at_unix
