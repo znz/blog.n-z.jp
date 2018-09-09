@@ -2,6 +2,9 @@
 layout: post
 title: "台風第21号の影響の記録"
 date: 2018-09-09 20:59 +0900
+comments: true
+category: blog
+tags: disaster
 ---
 [平成30年台風第21号](https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%88%9030%E5%B9%B4%E5%8F%B0%E9%A2%A8%E7%AC%AC21%E5%8F%B7)
 で長時間の停電などの影響を受けたので、
