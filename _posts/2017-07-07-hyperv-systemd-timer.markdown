@@ -4,7 +4,7 @@ title: "Hyper-V のゲスト環境で systemd timer がうまく動いていな�
 date: 2017-07-07 00:30:00 +0900
 comments: true
 category: blog
-tags: linux debian ubuntu windows
+tags: linux debian ubuntu windows systemd
 ---
 Hyper-V のゲストとしてインストールした Linux 環境で systemd timer の `RandomizedDelaySec` がおかしくて timer が実行されないことがあったのですが、Hyper-V の時刻の同期との相性が悪いのが原因でした。
 

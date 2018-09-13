@@ -4,7 +4,7 @@ title: "systemctl list-timers の LAST が未来になっていてタイマー�
 date: 2018-05-14 22:50 +0900
 comments: true
 category: blog
-tags: linux debian ubuntu windows
+tags: linux debian ubuntu windows systemd
 ---
 毎日実行されるはずのタイマーが実行されなかったので、
 systemctl list-timers で確認してみると LAST が未来になっていました。

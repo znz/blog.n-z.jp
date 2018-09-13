@@ -4,7 +4,7 @@ title: "cron(crontab)の代わりにsystemdのtimerを使う"
 date: 2017-06-04 14:18:19 +0900
 comments: true
 category: blog
-tags: linux debian ubuntu
+tags: linux debian ubuntu systemd
 ---
 最近 [gitlab omnibus などの環境](https://github.com/znz/ansible-playbook-gitlab-dokku)を作っていて、[GitLab CE の role](https://github.com/znz/ansible-role-gitlab-ce) でバックアップ処理を定期実行するのに crontab ではなく systemd の timer を使ってみました。
 
