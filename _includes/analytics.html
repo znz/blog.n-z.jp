@@ -1,3 +1,4 @@
+{%- if jekyll.environment == 'production' and site.analytics_id != '' -%}
 <amp-analytics data-block-on-consent type="googleanalytics" id="amp-analytics">
 <script type="application/json">
 {
@@ -13,3 +14,4 @@
 }
 </script>
 </amp-analytics>
+{%- endif -%}

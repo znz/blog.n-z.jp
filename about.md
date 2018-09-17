@@ -23,6 +23,8 @@ You can find the source code for Jekyll at GitHub:
 [jekyll][jekyll-organization] /
 [jekyll](https://github.com/jekyll/jekyll)
 
+{% if site.ad_client != '' %}
+
 ## 広告の配信について
 
 当サイトは第三者配信の広告サービス「Google Adsense グーグルアドセンス」を利用しています。
@@ -35,11 +37,17 @@ Cookie（クッキー）を無効にする設定およびGoogleアドセンス�
 
 第三者がコンテンツおよび宣伝を提供し、訪問者から直接情報を収集し、訪問者のブラウザにクッキーを設定したりこれを認識したりする場合があります。
 
+{% endif %}
+
+{% if site.analytics_id != '' %}
+
 ## アクセス解析ツールについて
 
 当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
 
 このGoogleアナリティクスはトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。この規約に関して、詳しくは[Google アナリティクス利用規約](http://www.google.com/analytics/terms/jp.html)を参照してください。
+
+{% endif %}
 
 ## 免責事項
 
