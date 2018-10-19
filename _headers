@@ -5,3 +5,5 @@ layout: null
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
+/disqus_thread.html
+  X-Frame-Options: allow-from https://blog.n-z.jp/
