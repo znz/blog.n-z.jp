@@ -14,6 +14,7 @@ layout: null
 /2018-04-28-rubyconftw.html /blog/2018-04-28-rubyconftw.html
 /2018-05-30-generateduid.html /blog/2018-05-30-generateduid.html
 /2018-09-09-typhoon-21-jebi.html /blog/2018-09-09-typhoon-21-jebi.html
+/ruby/2018-10-26-drbtest.html /blog/2018-10-26-drbtest.html
 # exclude
 https://blog-n-z-jp.netlify.com/disqus_thread.html /disqus_thread.html 200
 # Redirect default Netlify subdomain to primary domain
