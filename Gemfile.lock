@@ -36,7 +36,7 @@ GEM
     jekyll-last-modified-at (1.0.1)
       jekyll (~> 3.3)
       posix-spawn (~> 0.3.9)
-    jekyll-minifier (0.1.8)
+    jekyll-minifier (0.1.9)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
       jekyll (>= 3.5)
