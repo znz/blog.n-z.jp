@@ -72,6 +72,8 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - node_modules
+- package-lock.json
+- package.json
 - vendor/bundle/
 - vendor/cache/
 - vendor/gems/
