@@ -10,6 +10,29 @@ Homebrew のパッケージの更新に昔は `brew update`; `brew upgrade`; `br
 
 <!--more-->
 
+## 2018-01-18 追記
+
+Homebrew 2.0.0 から `brew cleanup` の自動実行がデフォルトになる予定らしく、
+[Homebrew 1.9.0](https://brew.sh/2019/01/09/homebrew-1.9.0/) から
+
+```
+Warning: Calling 'brew upgrade --cleanup' is deprecated! Use 'HOMEBREW_INSTALL_CLEANUP' instead.
+```
+
+というメッセージが出るようになっているので、メッセージが不要なら代わりに
+
+```
+env HOMEBREW_INSTALL_CLEANUP=1 brew upgrade
+```
+
+と実行するとか、シェルの設定ファイルに
+
+```
+export HOMEBREW_INSTALL_CLEANUP=1
+```
+
+などと設定すると良いでしょう。
+
 ## 確認バージョン
 
 - Homebrew 1.1.13
