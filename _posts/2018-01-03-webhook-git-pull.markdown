@@ -4,7 +4,7 @@ title: "webhook でサイトの git pull をする設定をした"
 date: 2018-01-03 18:00:00 +0900
 comments: true
 category: blog
-tags: linux debian ubuntu gitlab lilo
+tags: linux debian ubuntu gitlab lilo systemd
 ---
 GitLab.com に git push した時に webhook で通知を受け取って git pull という設定をしました。
 
