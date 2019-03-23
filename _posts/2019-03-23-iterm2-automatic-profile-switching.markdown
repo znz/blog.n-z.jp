@@ -95,6 +95,13 @@ Profile の一覧の下側の `Other Actions...` から `Bulk Copy from Selected
 
 Triggers だけコピーは今のところはできないようなので、 Automatic Profile Switching で切り替える Profile は元の Profile とほぼ同じ設定にしておく、ということでしのいでいます。
 
+## Triggers 設定例
+
+今のところの Triggers の設定を例としてスクリーンショットで載せておきます。
+`irb -r irb/completion --simple-prompt` 用の `^>> $` で `Prompt Detected` も入っています。
+
+![Triggers 設定例]({{ "/assets/images/2019-03-23-triggers.png" | relative_url }})
+
 ## 参考サイト
 
 [Using iTerm Automatic Profile Switching to Make Fewer Mistakes In Production](http://www.panozzaj.com/blog/2016/08/21/using-iterm2-to-make-fewer-mistakes-in-production/) を参考にしました。
