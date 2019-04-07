@@ -23,7 +23,7 @@ tags: linux raspberrypi googlehome iot
 
 [raspberry pi と AB Shutter3(bluetoothボタン) の連携 - フクロウ好きなエンジニアのブログ](https://miya15.hatenablog.com/entry/2018/11/04/145905) のように、
 `scan on` で出てくる中の `[NEW] Device XX:XX:XX:XX:XX:XX AB Shutter3` の MAC アドレスを使います。
-接続には `pair` でペアリング、 `trust` で電源入れ直し後も自動再接続、 `connect` で接続あたりを使います。
+接続には `pair` でペアリング、 `trust` で PIN がないデバイスを手動で信頼、 `connect` で接続あたりを使います。
 Ctrl+C や `quit` で終了できます。
 
 ```
