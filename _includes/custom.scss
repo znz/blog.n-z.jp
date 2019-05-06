@@ -37,3 +37,19 @@
 .page-navigation .next {
 	text-align: right;
 }
+
+#tag-cloud {
+	line-height: 3;
+	a {
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		margin: 5px;
+		padding: 5px;
+		text-decoration: none;
+	}
+	.set-1 { font-size: 100% }
+	.set-2 { font-size: 125% }
+	.set-3 { font-size: 150% }
+	.set-4 { font-size: 175% }
+	.set-5 { font-size: 200% }
+}
