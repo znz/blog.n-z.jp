@@ -10,7 +10,14 @@ tags: ubuntu linux
 Ubuntu 16.04 LTS (xenial) から Ubuntu 18.04 (bionic) にあげてみました。
 すると ppa で入れている milter-manager をダウングレードしないと更新できなかったので、そのメモです。
 
+
 <!--more-->
+
+## 2019-07-30 追記
+
+Ubuntu 公式パッケージのバージョンをみていると 18.04 などの数字でつけていたので、
+<https://github.com/milter-manager/milter-manager/issues/137> で依頼して変更してもらい、
+現在は根本的な解決をしています。
 
 ## 環境
 
