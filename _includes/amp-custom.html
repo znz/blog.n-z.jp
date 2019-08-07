@@ -1,0 +1,7 @@
+<style amp-custom>
+ {% capture include_to_scssify %}
+ {% include styles.scss %}
+ {% include custom.scss %}
+ {% endcapture %}
+ {{ include_to_scssify | scssify }}
+</style>
