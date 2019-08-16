@@ -6,7 +6,7 @@ comments: true
 category: blog
 tags: jekyll
 ---
-[ruby-jp slack](https://ruby-jp.slack.com/join/shared_invite/enQtNzE1NDg1ODE2MDM2LTE1NTc2Y2M0ZThlNzdmOWEyZjYwZjdhZDAwNjNhMGE0NDJiODcwMTNkZWRjOTgyMzNkZjEyMmQ1ZWYyNzkzYzk)
+[ruby-jp slack](https://ruby-jp.github.io/)
 というところで
 「最新の Jekyll 4.0.0.pre.alpha1 を使うとビルド時間が爆速になります」という話があったので、
 そのリンク先を参考にして試してみたところ、
