@@ -1,5 +1,6 @@
 @import 'bourbon/bourbon';
-@import 'syntax-highlighting';
+//@import 'syntax-highlighting';
+@import 'solarized-light';
 
 $grey-color:       #828282;
 
@@ -494,16 +495,15 @@ body {
   }
 }
 
-
-pre,
-code {
+pre.highlighter-rouge,
+code.highlighter-rouge {
   font-size: smaller;
-  border: 1px solid #e8e8e8;
+  border: 1px solid darken(#fdf6e3, 15%);
   border-radius: 3px;
-  background-color: #eeeeff;
+  background-color: #fdf6e3;
 }
 
-code {
+code.highlighter-rouge {
   padding: 1px 5px;
 }
 
