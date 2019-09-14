@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "homebrewの更新はbrew upgrade --cleanupだけでよくなっている"
+title: "homebrewの更新はbrew upgrade --cleanupだけでよくなっている (その後 --cleanup は不要に)"
 date: 2017-04-27 20:00:48 +0900
 comments: true
 category: blog
@@ -9,6 +9,18 @@ tags: homebrew osx
 Homebrew のパッケージの更新に昔は `brew update`; `brew upgrade`; `brew cleanup` と 3 コマンドを使っていましたが、今は `brew upgrade --cleanup` だけでよくなっています。
 
 <!--more-->
+
+## 2019-09-15 追記
+
+しばらく変化がないか、経過を待っていましたが、
+結局 `brew upgrade` だけで 30 日以上古いものが自動削除されるというのがデフォルトということで、
+普通はその挙動に任せればよくなった、という状態で決定のようです。
+
+つまり
+`brew upgrade --cleanup` があった頃のようにすぐに古いものを消したければ
+`brew upgrade` の後に `brew cleanup` も実行する必要がある状態に戻ったようです。
+
+自動削除を止めたければ `HOMEBREW_NO_INSTALL_CLEANUP=1` で止めることもできます。
 
 ## 2018-01-18 追記
 
