@@ -7,12 +7,16 @@ category: blog
 tags: event ruby
 twitter: true
 ---
-[大阪Ruby会議02](http://regional.rubykaigi.org/osaka02/) で発表しました。
+[大阪Ruby会議02](http://regional.rubykaigi.org/osaka02/) に参加して、発表しました。
 
 <!--more-->
 
 以下、メモです。
 発表によってしっかりメモを取りつつ聞いていたり、メモはあまりとらずに聞いていたりしました。
+
+## 会場
+
+本町駅経由の方が近いのかと思っていたら、新大阪方面からだと路線検索で出てきた経路の淀屋橋駅で降りて歩く方が近かったようです。
 
 ## スポンサー LT : 開発メンバーの課題の探し方
 
