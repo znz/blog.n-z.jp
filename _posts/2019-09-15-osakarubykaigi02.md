@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "大阪Ruby会議02に参加しました"
-date: 2018-09-15 10:00 +0900
+date: 2019-09-15 10:00 +0900
 comments: true
 category: blog
 tags: event ruby
