@@ -43,7 +43,6 @@ ruby/ruby の master branch の `tool/make-snapshot` を使ってリリース ta
 
 - ブランチの `tool/make-snapshot` を使うこともあったようですが、元々はブランチからの安定版リリースでも trunk の `tool/make-snapshot` を使うことが想定されていたようです。
 - `.draft` をつけているのは、正式リリースの tarball と間違えて使われてないようにするためで、正式リリースの時にはファイル名だけ変えれば良いという想定です。
-- (最初は `.draft` をつけていなかったので正式リリースの tarball と同じ名前でテスト作成された tarball が `pub/tmp` に入ってしまっているので消したい…)
 
 ### 使い方
 
