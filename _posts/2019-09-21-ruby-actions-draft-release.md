@@ -4,7 +4,7 @@ title: "GitHub Actions で Ruby の tarball 作成などを試している"
 date: 2019-09-21 20:00 +0900
 comments: true
 category: blog
-tags: ruby github
+tags: ruby github actions
 ---
 [GitHub Actions](https://github.com/features/actions) で Ruby の snapshot tarball やリリース用の tarball の準備 (正式リリース版になるのはリリースアナウンス後) などを試しています。
 現状のメモを残しておきます。

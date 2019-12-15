@@ -4,7 +4,7 @@ title: "GitHub Actions をリリース作業の一部に使った Ruby がリリ
 date: 2019-10-01 23:30 +0900
 comments: true
 category: blog
-tags: ruby github
+tags: ruby github actions
 ---
 [GitHub Actions](https://github.com/features/actions) で Ruby リリース用の tarball の準備 (正式リリース版になるのはリリースアナウンス後) をした初リリースがありました。
 

@@ -4,7 +4,7 @@ title: "GitHub Actionsでtmateを使ってシェルに繋いでデバッグす�
 date: 2019-11-10 15:00 +0900
 comments: true
 category: blog
-tags: github
+tags: github actions
 ---
 [tmate](https://tmate.io/) を使って GitHub Actions の環境に ssh またはブラウザーから端末のシェルに繋いで、調査やデバッグなどができます。
 
