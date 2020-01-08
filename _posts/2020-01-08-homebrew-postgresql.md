@@ -166,3 +166,18 @@ Or, if you don't want/need a background service you can just run:
 % launchctl list | grep postgresql
 91589	0	homebrew.mxcl.postgresql
 ```
+
+## まとめ
+
+最初にインストールしたのが今よりも古いバージョンの postgresql の時で、
+データベースの変換が必要なバージョンアップをまたいでいた場合には
+そのままでは start できなくなる、という状況だったようです。
+
+その場合は `brew postgresql-upgrade-database` が正規の手順で正しかったようです。
+
+データベースをまだ使っていなかったり、消しても構わないようなデータしか入れていなかった場合は
+`/usr/local/var/postgres*` を削除して、
+`/usr/local/Cellar/postgresql/12.1/bin/initdb --locale=C -E UTF-8 /usr/local/var/postgres`
+で作り直すなり、
+`brew reinstall postgresql`
+で入れ直して自動で再作成するなりしても良いようでした。
