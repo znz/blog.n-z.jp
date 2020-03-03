@@ -17,6 +17,7 @@ Raspberry Pi 4B を `/boot` だけ micro SD カードに残して `/` は USB HD
 
 - Raspberry Pi 4B (4GB モデル)
 - Raspbian Buster Lite
+- 8GB の micro SDHC
 - 4TB の USB HDD
 
 自動起動できるように暗号化の鍵は `/boot/initramfs.gz` に平文で保存しています。
@@ -175,6 +176,8 @@ $ sudo lvcreate --thin -L 3T vg4b1/thin4b1
   WARNING: Consider disabling zeroing (-Zn) or using smaller chunk size (<512.00 KiB).
   Logical volume "thin4b1" created.
 ```
+
+2020-03-03 追記: 残っている警告にも対処するために[後日の作り直し]({% post_url 2020-03-03-raspi4-crypt-lvm %})では `sudo lvcreate --thin -L 900G -Zn vg4b1/thin4b1` のように `-Zn` をつけました。
 
 `sudo lvdisplay` や `sudo lvs` で確認します。
 消すのは `lvremove` です。
