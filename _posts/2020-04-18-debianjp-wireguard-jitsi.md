@@ -4,7 +4,7 @@ title: "オンライン開催：東京エリア・関西合同Debian勉強会で
 date: 2020-04-18 23:50 +0900
 comments: true
 category: blog
-tags: ruby
+tags: wireguard debian linux
 ---
 [オンライン開催：東京エリア・関西合同Debian勉強会 (2020/4/18(土))](https://debianjp.connpass.com/event/172494/)
 で wireguard を半年ぐらい使ってたまった知見の話をしました。
