@@ -1,6 +1,11 @@
 @import 'bourbon/bourbon';
 //@import 'syntax-highlighting';
-@import 'solarized-light';
+@media (prefers-color-scheme: light) {
+  @import 'solarized-light';
+}
+@media (prefers-color-scheme: dark) {
+  @import 'solarized-dark';
+}
 
 $grey-color:       #828282;
 
@@ -519,4 +524,155 @@ pre {
 
 .pull-right {
   float: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+  }
+.site-header {
+  .page-links {
+      a {
+        color: #666666;
+        &:hover {
+          color: #cccccc;
+        }
+      }
+    }
+  }
+.blog-header {
+  .blog-title {
+    color: #cccccc;
+  }
+  .blog-description {
+    color: #cccccc;
+  }
+}
+
+.content {
+  article {
+    border-bottom: 1px solid #0d0d10;
+    .post-title {
+      a {
+        color: #cccccd;
+      }
+    }
+    .post-excerpt {
+      color: #99999a;
+    }
+    .post-meta {
+      color: #4c4c4e;
+      a {
+        color: #4c4c4e;
+      }
+    }
+  }
+}
+
+.index-headline {
+  border-top: 1px solid #212123;
+  span {
+    color: #4c4c4e;
+  }
+}
+
+.pagination {
+  a {
+    color: #666666;
+    &:hover {
+      color: #cccccc;
+    }
+  }
+}
+
+.site-footer {
+  color: #666666;
+  a {
+    color: #999999;
+    &:hover {
+      color: #cccccc;
+    }
+  }
+}
+
+.post {
+  .post-title {
+    color: #cccccd;
+  }
+  .post-meta-text {
+    color: #4c4c4e;
+  }
+
+  .post-content {
+    color: #cccccc;
+    table, th, td {
+      border: 1px solid white;
+    }
+    p {
+      color: #cccccc;
+    }
+    a {
+      color: #cccccc;
+    }
+    figcaption {
+      color: #999998;
+    }
+    hr {
+      border: 0px solid #222222;
+      border-top: 1px solid #222222;
+    }
+    blockquote {
+      border-left: 3px solid #57ad68; // TODO
+      p {
+        mborder-left: 3px solid #57ad68; // TODO
+      }
+    }
+  }
+  .bottom-teaser {
+    hr {
+      border: 0px solid #222222;
+      border-top: 1px solid #222222;
+    }
+    .isLeft {
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: #cccccc;
+        }
+      }
+      p {
+        &.published {
+          color: #666666;
+        }
+      }
+    }
+    .isRight {
+      .site-footer {
+        color: #666666;
+        a {
+          color: #cccccc;
+        }
+        .poweredby {
+          color: #cccccc;
+        }
+      }
+    }
+  }
+}
+
+.share {
+  a {
+    color: #444444;
+    &:hover {
+      color: #cccccc;
+    }
+  }
+}
+
+pre.highlighter-rouge,
+code.highlighter-rouge {
+  border: 1px solid darken(#002b36, 15%);
+  background-color: #002b36;
+}
 }
