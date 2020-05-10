@@ -47,7 +47,6 @@ kramdown:
 
 plugins:
 - jekyll-paginate
-- jekyll-last-modified-at
 - jekyll-include-cache
 
 permalink: /:categories/:year-:month-:day-:title.html
