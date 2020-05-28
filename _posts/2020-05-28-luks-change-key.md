@@ -44,3 +44,13 @@ $ sudo cryptsetup luksAddKey /dev/sda2 /etc/keys/lvmcrypt4b1.key
 Enter any existing passphrase:
 $
 ```
+
+## initramfs.gz 更新
+
+最低限 `/boot/initramfs.gz` だけは更新しておきます。
+
+```
+$ sudo mkinitramfs -o /boot/initramfs.gz
+cryptsetup: WARNING: Permissive UMASK (0022). Private key material within the
+    initrd might be left unprotected.
+```
