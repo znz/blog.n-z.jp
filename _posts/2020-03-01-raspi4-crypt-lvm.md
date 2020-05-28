@@ -221,9 +221,12 @@ time sudo rsync -avx / /tmp/root4b1/
 
 ## 鍵ファイル作成
 
+(2020-05-28 修正: `openssl rand -out /etc/keys/lvmcrypt4b1.key` の後ろにサイズをつけないと0バイトのファイルが鍵になってしまっていました。
+[後日の記事]({% post_url 2020-05-28-luks-change-key %}) で鍵の変更方法を書いています。)
+
 ```
 $ sudo install -d /etc/keys
-$ sudo sh -c 'umask 377; openssl rand -out /etc/keys/lvmcrypt4b1.key'
+$ sudo sh -c 'umask 377; openssl rand -out /etc/keys/lvmcrypt4b1.key 1024'
 $ sudo cryptsetup luksAddKey /dev/sda2 /etc/keys/lvmcrypt4b1.key
 Enter any existing passphrase:
 ```
