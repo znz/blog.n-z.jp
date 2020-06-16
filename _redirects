@@ -1,22 +1,22 @@
 ---
 layout: null
 ---
-/atom.xml /feed.xml
-/blog/categories/* /tag/:splat
-/blog/page/* /
-/blog/2014-07-08-devise-omniauth.html /blog/2014-07-07-devise-omniauth.html
-/blog/2017-04-18-mastodon-api-curl.html /blog/2017-04-17-mastodon-api-curl.html
-/blog/2017-12-03-shellcheck.html /blog/2017-12-02-shellcheck.html
-/blog/migrate-gitolite3 /blog/2018-01-23-migrate-gitolite3.html
-/2018-04-22-kansai-debian-meeting.html /blog/2018-04-22-kansai-debian-meeting.html
-/2018-04-26-rubyconftw.html /blog/2018-04-26-rubyconftw.html
-/2018-04-27-rubyconftw.html /blog/2018-04-27-rubyconftw.html
-/2018-04-28-rubyconftw.html /blog/2018-04-28-rubyconftw.html
-/2018-05-30-generateduid.html /blog/2018-05-30-generateduid.html
-/2018-09-09-typhoon-21-jebi.html /blog/2018-09-09-typhoon-21-jebi.html
-/ruby/2018-10-26-drbtest.html /blog/2018-10-26-drbtest.html
-/blog/2018-09-15-osakarubykaigi02.html /blog/2019-09-15-osakarubykaigi02.html
+/atom.xml /feed.xml 301
+/blog/categories/* /tag/:splat 301
+/blog/page/* / 301
+/blog/2014-07-08-devise-omniauth.html /blog/2014-07-07-devise-omniauth.html 301
+/blog/2017-04-18-mastodon-api-curl.html /blog/2017-04-17-mastodon-api-curl.html 301
+/blog/2017-12-03-shellcheck.html /blog/2017-12-02-shellcheck.html 301
+/blog/migrate-gitolite3 /blog/2018-01-23-migrate-gitolite3.html 301
+/2018-04-22-kansai-debian-meeting.html /blog/2018-04-22-kansai-debian-meeting.html 301
+/2018-04-26-rubyconftw.html /blog/2018-04-26-rubyconftw.html 301
+/2018-04-27-rubyconftw.html /blog/2018-04-27-rubyconftw.html 301
+/2018-04-28-rubyconftw.html /blog/2018-04-28-rubyconftw.html 301
+/2018-05-30-generateduid.html /blog/2018-05-30-generateduid.html 301
+/2018-09-09-typhoon-21-jebi.html /blog/2018-09-09-typhoon-21-jebi.html 301
+/ruby/2018-10-26-drbtest.html /blog/2018-10-26-drbtest.html 301
+/blog/2018-09-15-osakarubykaigi02.html /blog/2019-09-15-osakarubykaigi02.html 301
 # exclude
-https://blog-n-z-jp.netlify.com/disqus_thread.html /disqus_thread.html 200
+https://blog-n-z-jp.netlify.app/disqus_thread.html /disqus_thread.html 200
 # Redirect default Netlify subdomain to primary domain
-https://blog-n-z-jp.netlify.com/* https://blog.n-z.jp/:splat 301!
+https://blog-n-z-jp.netlify.app/* https://blog.n-z.jp/:splat 301!
