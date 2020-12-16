@@ -36,7 +36,7 @@ ruby-3.0.0-preview1 ["enumerator.so", "thread.rb", "rational.so", "complex.so", 
 
 ## ghcr.io からのイメージでの実行例
 
-今年から docker hub の制限が厳しくなった影響を受けて、 GitHub Container Registry(ghcr.io) にも `docker push` されるようになり、 `ghcr.io/ruby/all-ruby` でも使えるようになりました。
+今年から docker hub の制限が厳しくなった影響を受けて、 GitHub Container Registry(ghcr.io) にも `docker push` されるようになり、 [ghcr.io/ruby/all-ruby](https://ghcr.io/ruby/all-ruby) でも使えるようになりました。
 
 上の実行例は 3.0.0-preview1 のリリース前に `docker pull` したものだったので、 preview1 までになっていますが、以下の実行例は 3.0.0-preview2 以降で初めて実行した時の出力です。
 
