@@ -2,6 +2,7 @@
 layout: post
 title: "all-rubyがghcr.io/ruby/all-rubyでも使えるようになった"
 date: 2020-12-16 22:00 +0900
+comments: true
 category: blog
 tags: ruby docker
 ---
