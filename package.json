@@ -19,7 +19,7 @@
   "homepage": "https://github.com/znz/blog.n-z.jp#readme",
   "devDependencies": {
     "textlint": "^11.9.0",
-    "textlint-rule-preset-ja-spacing": "^2.0.2",
+    "textlint-rule-preset-ja-spacing": "^2.1.1",
     "textlint-rule-preset-ja-technical-writing": "^6.0.0"
   }
 }
