@@ -4,7 +4,7 @@ title: "qemuでriscv64のDebian環境作成"
 date: 2022-01-29 17:00 +0900
 comments: true
 category: blog
-tags: linux riscv
+tags: linux debian qemu riscv
 ---
 <https://wiki.debian.org/RISC-V> を参考にして、 qemu で RISC-V の Debian の環境を作ってみました。
 
