@@ -13,12 +13,18 @@ qemu で `-nographic` や `-serial mon:stdio` などでシリアルコンソー�
 ## 最終結果
 
 `.bashrc` に以下の内容を追加しました。
-`zsh` でも同じ
 
 ```bash
 rsz () if [[ -t 0 ]]; then local escape r c prompt=$(printf '\e7\e[r\e[999;999H\e[6n\e8'); IFS='[;' read -sd R -p "$prompt" escape r c; stty cols $c rows $r; fi
 rsz
 ```
+
+`zsh` でも同じものが使える予定だったのですが、 `read -p` を使ってしまったので、共通で使えるものは、後述するように、たまに `^[[80;200R` のような表示が出てしまうことがありますが、以下になります。
+
+```bash
+rsz () if [[ -t 0 ]]; then local escape r c; printf '\e7\e[r\e[999;999H\e[6n\e8'; IFS='[;' read -sd R escape r c; stty cols $c rows $r; fi
+```
+
 
 ## 参考
 
