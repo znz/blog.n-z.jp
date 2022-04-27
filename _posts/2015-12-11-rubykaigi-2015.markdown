@@ -89,7 +89,7 @@ tags: ruby event
 - Levenshtein Distance
 - Jaro-Winkler Distance
 - Jaro Distance + Prefix Bonus
-- <http://git.io/vRdYW>
+- http://git.io/vRdYW (2022-04-27 追記: リダイレクト先の https://github.com/yuki24/did_you_mean/blob/master/lib/did_you_mean/spell_checkable.rb はリンク切れなので <https://github.com/ruby/did_you_mean> 参照)
 - 実装の説明
 - 質疑応答
 - necessary と nessecary のような例は Levenshtein Distance だけだと予測ができない
