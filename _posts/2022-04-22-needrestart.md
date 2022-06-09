@@ -132,3 +132,5 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 この件は lima で Ubuntu 21.10 を使っていて、いちいちダイアログが出てきて面倒だと思って調べて対処していました。
 
 メッセージだけだと何のパッケージで出ているのか調べるのもやりにくく、Ubuntu 22.04 LTS がリリースされてからは、同じように感じる人が増えるかもしれないと思って、ブログ記事として残しておくことにしました。
+
+2022-06-09 追記: [第718回　needrestartで学ぶパッケージのフック処理：Ubuntu Weekly Recipe](https://gihyo.jp/admin/serial/01/ubuntu-recipe/0718)という記事があるようなので、さらに詳しいことが知りたいと思ったら、参考にしてみてください。
