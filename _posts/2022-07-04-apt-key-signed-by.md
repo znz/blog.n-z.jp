@@ -108,6 +108,24 @@ exit
 docker rmi chrome
 ```
 
+### 2022-07-05 追記
+
+さらに調べてみると、パッケージインストール後に `/var/lib/dpkg/info/google-chrome-stable.postinst` で
+`/apt/trusted.gpg.d/google-chrome.gpg` が作成されて、
+`/etc/apt/sources.list.d/google-chrome.list` は以下の内容で上書きされて、
+`signed-by` が消えてしまうようなので、
+google-chrome に関しては `signed-by` を使いたいというのはあまり意味がなさそうでした。
+
+```
+### THIS FILE IS AUTOMATICALLY CONFIGURED ###
+# You may comment out this entry, but any other modifications may be lost.
+deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main
+```
+
+`/etc/default/google-chrome` の設定次第で `/etc/cron.daily/google-chrome -> /opt/google/chrome/cron/google-chrome` の自動処理による更新もあるようなので、
+Docker 環境のように一度設定して終わりの環境なら `signed-by` でも良さそうですが、
+普段使いの環境に入れる場合は今のところ諦めて `/apt/trusted.gpg.d/google-chrome.gpg` と `/etc/apt/sources.list.d/google-chrome.list` を使うのが無難そうです。
+
 ## 最後に
 
 Google Chrome が公式サイトに apt でのインストール方法を書いていないので探すのに苦労しましたが、
