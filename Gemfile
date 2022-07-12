@@ -10,3 +10,4 @@ gem 'jekyll-include-cache', group: :jekyll_plugins
 gem 'nokogiri'
 gem 'fastimage'
 gem 'liquid-c'
+gem 'webrick'
