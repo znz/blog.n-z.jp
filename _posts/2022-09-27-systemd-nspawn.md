@@ -201,7 +201,7 @@ $ sudo apt install debian-archive-keyring
 $ mmdebstrap --arch=arm64 --include=dbus \
    --customize-hook='chroot "$1" mv /etc/network/interfaces /etc/network/interfaces.save' \
    --customize-hook='chroot "$1" systemctl enable systemd-networkd systemd-resolved' \
-   bullseye /tmp/bullseye-arm64.tar
+   bullseye /tmp/arm64-bullseye.tar
 I: automatically chosen mode: unshare
 I: chroot architecture arm64 is equal to the host's architecture
 I: automatically chosen format: tar
@@ -241,9 +241,9 @@ I: success in 15.0921 seconds
 tarball が作成できたら、 `machinectl import-tar` で取り込みます。
 
 ```console
-$ sudo machinectl import-tar /tmp/bullseye-arm64.tar bullseye-arm64
+$ sudo machinectl import-tar /tmp/arm64-bullseye.tar arm64-bullseye
 Enqueued transfer job 1. Press C-c to continue download in background.
-Importing '/tmp/bullseye-arm64.tar', saving as 'bullseye-arm64'.
+Importing '/tmp/arm64-bullseye.tar', saving as 'arm64-bullseye'.
 Imported 0%.
 Imported 47%.
 Imported 82%.
@@ -258,12 +258,12 @@ $ sudo ls -al /var/lib/machines
 total 20
 drwx------  1 root root   28 Sep 27 04:00 .
 drwxr-xr-x 25 root root 4096 Sep 27 03:57 ..
-drwxr-xr-x  1 root root  122 Sep 27 03:59 bullseye-arm64
+drwxr-xr-x  1 root root  122 Sep 27 03:59 arm64-bullseye
 $ sudo btrfs subvolume list /var/lib/machines
-ID 257 gen 10 top level 5 path bullseye-arm64
+ID 257 gen 10 top level 5 path arm64-bullseye
 $ machinectl list-images
 NAME           TYPE      RO  USAGE CREATED                     MODIFIED
-bullseye-arm64 subvolume no 101.6M Tue 2022-09-27 04:00:56 UTC n/a
+arm64-bullseye subvolume no 101.6M Tue 2022-09-27 04:00:56 UTC n/a
 
 1 images listed.
 $ machinectl list
@@ -274,16 +274,16 @@ No machines.
 `machinectl shell` は `root` 権限が必要です。
 
 ```console
-$ sudo machinectl start bullseye-arm64
+$ sudo machinectl start arm64-bullseye
 $ machinectl list
 MACHINE        CLASS     SERVICE        OS     VERSION ADDRESSES
-bullseye-arm64 container systemd-nspawn debian 11      192.168.9.39…
+arm64-bullseye container systemd-nspawn debian 11      192.168.9.39…
 
 1 machines listed.
-$ machinectl shell bullseye-arm64
+$ machinectl shell arm64-bullseye
 Failed to get shell PTY: Access denied
-$ sudo machinectl shell bullseye-arm64
-Connected to machine bullseye-arm64. Press ^] three times within 1s to exit session.
+$ sudo machinectl shell arm64-bullseye
+Connected to machine arm64-bullseye. Press ^] three times within 1s to exit session.
 root@lima-debian-nspawn:~#
 ```
 
@@ -294,7 +294,7 @@ Debian では上の例のように `Failed to get shell PTY: Access denied` に�
 Ubuntu 22.04 では以下のようにパスワードをきかれてしまいます。
 
 ```console
-$ machinectl shell bullseye-arm64
+$ machinectl shell arm64-bullseye
 ==== AUTHENTICATING FOR org.freedesktop.machine1.shell ===
 Authentication is required to acquire a shell in a local container.
 Authenticating as: root
@@ -333,7 +333,7 @@ $ sudo systemd-nspawn -U -D /var/lib/machines/bullseye
 ```console
 $ machinectl list
 MACHINE        CLASS     SERVICE        OS     VERSION ADDRESSES
-bullseye-arm64 container systemd-nspawn debian 11      -
+arm64-bullseye container systemd-nspawn debian 11      -
 
 1 machines listed.
 ```
@@ -403,19 +403,19 @@ tarball 作成前なら `mmdebstrap` の引数で以下のようにホスト名�
 作成済みのコンテナで同様の設定をするなら以下のようになります。
 
 ```console
-$ sudo machinectl shell bullseye-arm64
-Connected to machine bullseye-arm64. Press ^] three times within 1s to exit session.
+$ sudo machinectl shell arm64-bullseye
+Connected to machine arm64-bullseye. Press ^] three times within 1s to exit session.
 root@lima-debian-nspawn:~# cat /etc/hostname
 lima-debian-nspawn
-root@lima-debian-nspawn:~# echo bullseye-arm64 > /etc/hostname
-root@lima-debian-nspawn:~# echo 172.0.1.1 bullseye-arm64 >> /etc/hosts
+root@lima-debian-nspawn:~# echo arm64-bullseye > /etc/hostname
+root@lima-debian-nspawn:~# echo 172.0.1.1 arm64-bullseye >> /etc/hosts
 root@lima-debian-nspawn:~# poweroff
 
-Connection to machine bullseye-arm64 terminated.
-$ sudo machinectl start bullseye-arm64
-$ sudo machinectl shell bullseye-arm64
-Connected to machine bullseye-arm64. Press ^] three times within 1s to exit session.
-root@bullseye-arm64:~#
+Connection to machine arm64-bullseye terminated.
+$ sudo machinectl start arm64-bullseye
+$ sudo machinectl shell arm64-bullseye
+Connected to machine arm64-bullseye. Press ^] three times within 1s to exit session.
+root@arm64-bullseye:~#
 ```
 
 ## 自動起動
@@ -424,23 +424,23 @@ root@bullseye-arm64:~#
 `machinectl disable` で戻せます。
 
 ```console
-$ sudo machinectl enable bullseye-arm64
-Created symlink /etc/systemd/system/machines.target.wants/systemd-nspawn@bullseye-arm64.service → /lib/systemd/system/systemd-nspawn@.service.
-$ sudo machinectl disable bullseye-arm64
-Removed /etc/systemd/system/machines.target.wants/systemd-nspawn@bullseye-arm64.service.
-$ sudo systemctl enable systemd-nspawn@bullseye-arm64.service
-Created symlink /etc/systemd/system/machines.target.wants/systemd-nspawn@bullseye-arm64.service → /lib/systemd/system/systemd-nspawn@.service.
+$ sudo machinectl enable arm64-bullseye
+Created symlink /etc/systemd/system/machines.target.wants/systemd-nspawn@arm64-bullseye.service → /lib/systemd/system/systemd-nspawn@.service.
+$ sudo machinectl disable arm64-bullseye
+Removed /etc/systemd/system/machines.target.wants/systemd-nspawn@arm64-bullseye.service.
+$ sudo systemctl enable systemd-nspawn@arm64-bullseye.service
+Created symlink /etc/systemd/system/machines.target.wants/systemd-nspawn@arm64-bullseye.service → /lib/systemd/system/systemd-nspawn@.service.
 ```
 
-`systemd-nspawn@bullseye-arm64.service` の操作なので、
-`sudo systemctl enable systemd-nspawn@bullseye-arm64.service`
+`systemd-nspawn@arm64-bullseye.service` の操作なので、
+`sudo systemctl enable systemd-nspawn@arm64-bullseye.service`
 のように `systemctl` を使っても同じですが、
 短いので `machinectl` を使っています。
 
 ## systemd service
 
 `systemd` の unit なので、
-`systemctl edit systemd-nspawn@bullseye-arm64.service`
+`systemctl edit systemd-nspawn@arm64-bullseye.service`
 で個別の設定をしたり、
 `systemctl edit systemd-nspawn@.service`
 で共通の設定をしたりできます。
@@ -493,7 +493,7 @@ Environment=SYSTEMD_NSPAWN_TMPFS_TMP=0
 `machinectl terminate` が強制終了です。
 
 うまく終了してくれないと思ったときは、
-`sudo systemctl stop systemd-nspawn@bullseye-arm64.service`
+`sudo systemctl stop systemd-nspawn@arm64-bullseye.service`
 のように `systemctl stop` を使うと安全な方法から順番に試して最終的に全部止めてくれます。
 
 ## コンテナの削除
@@ -507,7 +507,7 @@ Environment=SYSTEMD_NSPAWN_TMPFS_TMP=0
 最終的に最低限のコンテナを増やして使って削除する手順はまとめなおすと以下のようになります。
 
 ```console
-$ NAME=bullseye-arm64
+$ NAME=arm64-bullseye
 $ mmdebstrap --arch=arm64 --include=dbus \
    --customize-hook='chroot "$1" mv /etc/network/interfaces /etc/network/interfaces.save' \
    --customize-hook='chroot "$1" systemctl enable systemd-networkd systemd-resolved' \
