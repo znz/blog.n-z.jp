@@ -117,3 +117,10 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 ## 感想
 
 PPA のパッケージはたまにこういうことがあるので、できるだけ使わないようにしたり、バージョンアップは対処できる余裕のあるときに限ったりした方が良さそうです。
+
+報告先を探して、過去のメーリングリストのログをみてみたところ、メーリングリストの調子がよくないので
+<https://github.com/milter-manager/milter-manager/discussions>
+を使ってほしいという話があったので、
+質問などなら discussions だけど、バグ報告なら issues でいいかなと思って、
+[Failed to upgrade from 2.1.5-2~ubuntu20.04.3 to 2.2.0-1.ubuntu20.04.1](https://github.com/milter-manager/milter-manager/issues/176)
+に報告しました。
