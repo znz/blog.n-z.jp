@@ -78,10 +78,15 @@ extra-socket からのリクエストのときは
 ## 公開鍵のコピー
 
 公開鍵はリモートにも入れておく必要があるようなので、
-`--export` して `--import` しておきます。
+`export` して `import` しておきます。
+`--armor` をつけているのは、間違えて端末に表示してしまったときに変にならないようにするためで、なくても同じです。
+
+(2022-10-14 追記)
+`ownertrust` の情報も `export` して `import` しておきます。
 
 ```console
 % gpg --export --armor $KEY_ID | ssh $REMOTE gpg --import
+% gpg --export-ownertrust | ssh $REMOTE gpg --import-ownertrust
 ```
 
 ## コマンドライン指定での動作確認
@@ -101,6 +106,7 @@ extra-socket からのリクエストのときは
 % ssh -o "RemoteForward $(ssh $REMOTE gpgconf --list-dir agent-socket) $(gpgconf --list-dir agent-extra-socket)" $REMOTE
 $ echo test | gpg --encrypt -r $KEY_ID --armor -o test.asc
 $ gpg --decrypt test.asc
+$ gpg -K
 ```
 
 最初はうまくいかなかったので、
@@ -141,6 +147,8 @@ $ sudo systemctl reload ssh
 これでリモートに秘密鍵を置かずに
 [Pass: The Standard Unix Password Manager](https://www.passwordstore.org/)
 などが使えそうです。
+
+[次回の記事]({% post_url 2022-10-14-gpg-agent-forwarding %})に続きます。
 
 ## 参考サイト
 
