@@ -15,7 +15,7 @@ tags: html5 javascript
 
 ## 使い方
 
-[Web Barcode Reader](https://web-barcode-reader.herokuapp.com/)
+Web Barcode Reader (2022-11追記: 放置していたら削除されてしまったためデモサイトは今はありません)
 を開いて、
 既にPC上に画像がある場合はその画像を選択してください。
 選択するだけでバーコードの認識が始まります。

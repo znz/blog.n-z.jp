@@ -24,7 +24,7 @@ tags: event ruby rubykansai
 で公開しています。
 
 heroku にも deploy したので、
-<https://regexp-201403.herokuapp.com/>
+デモサイト (2022-11追記: 放置していたら削除されてしまったためデモサイトは今はありません)
 で試せます。
 
 ### 制限事項
