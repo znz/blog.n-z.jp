@@ -36,6 +36,15 @@ Rubyリファレンスマニュアルの話をするという案もあったの�
 企業の目的(リクルーティングとか)にもあうような形で Rubyist Magazine にも記事が載せてもらえる方法があると良いのかもしれない、
 という話を会議後の個別の懇親会のときに話していました。
 
+長く残るという点で、歴史的資料としての価値が高いという話もあったので、
+[pocke さんのRubyの外部コマンド実行入門について発表しました](https://pocke.hatenablog.com/entry/2023/02/19/004700)
+に書いてあるように、長く参照してほしいものも含めて、残せる場所になると良さそうだと思いました。
+
+今回の発表のために過去の経緯を探すのに苦労して、
+しかも [migrate to magazine.rubyist.net](https://slide.rabbit-shocker.org/authors/znz/migrate-rubima-2013/) という自分が発表したものは事前にみつけられず、
+今回の発表資料を公開しようとしたときに見つけた、ということもあったので、
+Rubyist Magazine 自体の歴史も記事としてまとめなおせると良さそうだと思いました。
+
 ## 発表資料
 
 {% include slides.html author="znz" slide="fukuoka03-rubima-reboot" title="Rubyist Magazine Reboot" slideshare="znzjp/rubykaigi2022ruremahistoryandfuturepdf" speakerdeck="znz/rubyist-magazine-reboot" github="znz/fukuoka03-rubima-reboot" %}
@@ -45,7 +54,7 @@ Rubyリファレンスマニュアルの話をするという案もあったの�
 どの発表もおもしろくて、録画や配信がないからできる話があったり、ちょっとぐらいなら見えては困るものがうつりこんだりするのも、オフラインのみのイベントという感じがあって良かったです。
 
 それから、「Ruby のリリースを爆速にするための方法」で何度も名前がでてきたり「Closing Talk」でも名前がでてきてたりして、ありがたい感じでした。
-(`ruby -run -e colorize entry.rb` の `colorize` も私が追加した機能だったので、オッと思いました。)
+([tompng さんの Keynote](https://drive.google.com/file/d/1_db2MfcCosyeCFv8fCnN-lbLgmBHobd5/view) の `ruby -run -e colorize entry.rb` の `colorize` も私が追加した機能だったので、オッと思いました。)
 
 「恩送り」という言葉は昔も見たことがあった気がするのですが、最近また見かけてちょっと気になっていたので、
 これからもっとそういうことを意識していくと良いのかもしれないと思いました。
