@@ -183,7 +183,7 @@ body {
   padding: 16px 0;
   span {
     color: #b3b3b1;
-    font-size: $rs / 8 * 5;
+    font-size: calc($rs / 8 * 5);
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -192,7 +192,7 @@ body {
 .pagination {
   text-align: center;
   padding: $rs * 1 0 0;
-  font-size: $rs / 4 * 3;
+  font-size: calc($rs / 4 * 3);
   a {
     color: #999999;
     text-decoration: none;
@@ -207,7 +207,7 @@ body {
   padding: $rs * 3 0;
   width: 100%;
   max-width: 700px;
-  font-size: $rs / 4 * 3;
+  font-size: calc($rs / 4 * 3);
   text-align: center;
   color: #999999;
   line-height: $rs * 1.1;
