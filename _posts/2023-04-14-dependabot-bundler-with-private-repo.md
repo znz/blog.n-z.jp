@@ -120,6 +120,10 @@ Name: `DEPENDABOT_PRIVATE_KEY` で Secret は先程生成したトークンの s
 - [package-ecosystem](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem)
 - [Dependabot can't update bundler dependency files that reference private git repositories](https://github.com/dependabot/dependabot-core/issues/3587)
 
+ログの場所がわかったので確認したところ、公式サイトでは
+<https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#git>
+に説明がありました。
+
 ## まとめ
 
 private repositories を参照している `Gemfile` を dependabot で更新したい時は `dependabot.yml` の `repositories` に以下のような設定を追加して、
