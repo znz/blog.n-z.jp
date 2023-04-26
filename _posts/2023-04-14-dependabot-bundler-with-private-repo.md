@@ -120,9 +120,9 @@ Name: `DEPENDABOT_PRIVATE_KEY` で Secret は先程生成したトークンの s
 - [package-ecosystem](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem)
 - [Dependabot can't update bundler dependency files that reference private git repositories](https://github.com/dependabot/dependabot-core/issues/3587)
 
-ログの場所がわかったので確認したところ、公式サイトでは
+ログの場所がわかったので確認したところ、公式サイトの
 <https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#git>
-に説明がありました。
+へのリンクがありました。
 
 ## まとめ
 
