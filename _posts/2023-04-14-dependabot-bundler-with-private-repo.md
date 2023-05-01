@@ -138,6 +138,16 @@ registries:
     password: ${{secrets.DEPENDABOT_PRIVATE_KEY}}
 ```
 
+(2023-05-01 追記ここから) `updates:` の方で参照している方に `registries: "*"` が必要でした。参照する `registries` を明示して以下のように書いても大丈夫でした。
+
+```yaml
+    registries:
+	- github-octocat
+```
+
+`bundler` の場合は、さらに `insecure-external-code-execution: "allow"` もないとエラーになったので、セットで指定が必須かもしれません。(2023-05-01 追記ここまで)
+
+
 `secrets` は repo レベルでも org レベルでも良いので、Settings の Secrets and variables の Dependabot から、対象の repositories にアクセスできる token を設定しておきます。
 
 動作確認するためのログは `dependabot.yml` を開いたときの「View update status」か、Insights の Dependency graph の Dependabot からたどりつけます。
