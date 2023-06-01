@@ -12,6 +12,7 @@ permalink: /me/
 - <a href="https://gitlab.com/znz">GitLab.com: @znz</a>
 - <a href="https://rubygems.org/profiles/znz">RubyGems.org</a>
 - <a href="https://launchpad.net/~znz">Launchpad id: znz</a>
+- <a href="https://bsky.app/profile/znz.bsky.social">@znz.bsky.social - Bluesky</a>
 
 ## Slides
 
