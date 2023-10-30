@@ -83,3 +83,11 @@ Rails 7.1 で細分化が進んで `core_ext` などは別途 `require` が必�
 使い方としては Rails ガイドや <https://github.com/rails/rails/issues/49495> などにあるように `core_ext` だけを使うときにも別途 `require "active_support"` が必要なのはそういうもののようです。
 
 `irb` 上などでとりあえず全部読み込めばいいと思ったときは `require "active_support/all"` をしていたので、 `require "active_support"` の範囲は気にしていなかったので、勉強になりました。
+
+## 2023-10-30 11:35 追記
+
+今回の件は[amatsudaさん](https://github.com/amatsuda)に
+<https://github.com/rails/rails/commit/0170745b376acd150fec5f8cc57253cc1ffe0cf2>
+の変更の副作用だったと教えてもらえました。
+「しかし、当然ながら、使いたいものは使う側が明示的にrequireするべきで、今までそれをせずに動いてたのはたまたまだし、今回修正していただいた方針で正しいとは思います。」
+とも教えてもらったので、修正自体はこれでよさそうでした。
