@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LILO&東海道らぐオフラインミーティング 2020-08-16 に参加しました"
+title: "LILO&東海道らぐオンラインミーティング 2020-08-16 に参加しました"
 date: 2020-08-16 23:55 +0900
 comments: true
 category: blog
