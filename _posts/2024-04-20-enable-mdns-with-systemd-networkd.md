@@ -4,7 +4,7 @@ title: "systemd-networkd環境でnetplanやvirbr0のmDNSを有効にする"
 date: 2024-04-20 13:15 +0900
 comments: true
 category: blog
-tags: linux debian ubuntu
+tags: linux systemd debian ubuntu
 ---
 LAN 内や仮想マシンとの間で mDNS での名前解決ができると便利なので、
 `systemd-networkd` で netplan 管理のネットワークや `libvirt` 管理の `virbr0` などでも
