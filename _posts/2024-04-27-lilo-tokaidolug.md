@@ -29,6 +29,10 @@ tags: lilo event linux
 ## 発表資料
 
 Ubuntu の riscv64 版を qemu で動かす方法を、リリースされたばかりの Ubuntu 24.04 で確認しなおして、発表資料としてまとめなおしました。
+
 あまり準備時間をとれなかったので、最低限動かして使えるようにするところまでの話にして、応用的な話は後日このブログに書くことにしました。
+
+最終的には <https://rubyci.org/> の riscv64 環境として EC2 上で動かしています。
+(master しか動かしていないのですが、動作が遅くて8時間以上かかっていて、最新においついていないので、薄い文字の行になっています。)
 
 {% include slides.html author="znz" slide="lilo-20240427" title="Ubuntuのriscv64版をqemuで動かした" slideshare="znzjp/ubunturiscv64qemu-at-lilo-20240427" speakerdeck="znz/ubuntunoriscv64ban-woqemudedong-kasita" github="znz/lilo-20240427" %}
