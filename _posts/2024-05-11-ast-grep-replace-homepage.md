@@ -77,7 +77,7 @@ help[replace-homepage]:
 
 他のファイルで `@homepage` への代入も書き換えても大丈夫そうだったので、
 対象に追加しました。
-`any` を使うと複数パターンの `OR` にできました。
+[any](https://ast-grep.github.io/guide/rule-config/composite-rule.html#any) を使うと複数パターンの `OR` にできました。
 
 ```yaml
 id: replace-homepage
