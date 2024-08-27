@@ -14,6 +14,10 @@ permalink: /me/
 - <a href="https://launchpad.net/~znz">Launchpad id: znz</a>
 - <a href="https://bsky.app/profile/znz.bsky.social">@znz.bsky.social - Bluesky</a>
 
+## Event Speakers
+
+- <a href="https://rubykaigi-speakers.vercel.app/speakers/Kazuhiro+NISHIYAMA">RubyKaigi Speakers</a>
+
 ## Slides
 
 - <a href="https://slide.rabbit-shocker.org/authors/znz/">Kazuhiro NISHIYAMA - Rabbit Slide Show</a>
