@@ -17,7 +17,7 @@ GEM
     fastimage (2.3.1)
     ffi (1.17.0)
     forwardable-extended (2.6.0)
-    google-protobuf (4.28.1)
+    google-protobuf (4.28.2)
       bigdecimal
       rake (>= 13)
     htmlcompressor (0.4.0)
