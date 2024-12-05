@@ -1,3 +1,5 @@
+@use "sass:color";
+
 //@import 'syntax-highlighting';
 @media (prefers-color-scheme: light) {
   @import 'solarized-light';
@@ -499,7 +501,7 @@ body {
 pre.highlighter-rouge,
 code.highlighter-rouge {
   font-size: smaller;
-  border: 1px solid darken(#fdf6e3, 15%);
+  border: 1px solid color.adjust(#fdf6e3, $lightness: 15%);
   border-radius: 3px;
   background-color: #fdf6e3;
   word-break: break-all;
@@ -673,7 +675,7 @@ pre {
 
 pre.highlighter-rouge,
 code.highlighter-rouge {
-  border: 1px solid darken(#002b36, 15%);
+  border: 1px solid color.adjust(#002b36, $lightness: 15%);
   background-color: #002b36;
 }
 }
