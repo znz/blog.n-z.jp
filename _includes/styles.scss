@@ -1,11 +1,12 @@
 @use "sass:color";
+@use "sass:meta";
 
 //@import 'syntax-highlighting';
 @media (prefers-color-scheme: light) {
-  @import 'solarized-light';
+  @include meta.load-css('solarized-light');
 }
 @media (prefers-color-scheme: dark) {
-  @import 'solarized-dark';
+  @include meta.load-css('solarized-dark');
 }
 
 $grey-color:       #828282;
@@ -237,7 +238,8 @@ body {
     margin-bottom: 50px;
   }
   .author-image {
-    background-image: url({{ site.baseurl }}{{site.author_image}});
+    // background-image: url({{ site.baseurl }}{{site.author_image}});
+    // background-image: url(/assets/images/znz.png);
     display: inline-block;
     width: 30px;
     height: 30px;
