@@ -238,8 +238,7 @@ body {
     margin-bottom: 50px;
   }
   .author-image {
-    // background-image: url({{ site.baseurl }}{{site.author_image}});
-    // background-image: url(/assets/images/znz.png);
+    background-image: url({{ site.baseurl }}{{site.author_image}});
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -503,7 +502,7 @@ body {
 pre.highlighter-rouge,
 code.highlighter-rouge {
   font-size: smaller;
-  border: 1px solid color.adjust(#fdf6e3, $lightness: 15%);
+  border: 1px solid color.adjust(#fdf6e3, $lightness: -15%);
   border-radius: 3px;
   background-color: #fdf6e3;
   word-break: break-all;
@@ -677,7 +676,7 @@ pre {
 
 pre.highlighter-rouge,
 code.highlighter-rouge {
-  border: 1px solid color.adjust(#002b36, $lightness: 15%);
+  border: 1px solid color.adjust(#002b36, $lightness: -15%);
   background-color: #002b36;
 }
 }
