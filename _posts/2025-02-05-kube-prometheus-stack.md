@@ -336,7 +336,7 @@ pv0005   1Gi        RWO            Delete           Bound       monitoring/alert
 `level=ERROR source=query_logger.go:113 msg="Error opening query log file" component=activeQueryTracker file=/prometheus/queries.active err="open /prometheus/queries.active: permission denied"`
 のようなエラーがでていたら、正常に動いていた環境と比較してみるとパーミッションがおかしいようなので、
 `minikube ssh` で入って、以下のようにパーミッションを直して、
-しばらく待つか `helm` を実行しなおすと直っていました。
+`helm` を実行しなおすと直りました。
 
 ```console
 docker@minikube:~$ sudo chmod 777 /data/pv*/prometheus-db
