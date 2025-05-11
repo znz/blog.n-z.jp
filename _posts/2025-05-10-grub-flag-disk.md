@@ -174,7 +174,7 @@ $ blkid /dev/vdb1
 $ sudo cp /boot/grub/grubenv /boot/grub/flagenv
 ```
 
-GRUB の中で `save_env --file $prefix/flagenv 変数名` で書き込みます。
+GRUB の処理の中で `save_env --file $prefix/flagenv 変数名` で書き込みます。
 
 そして、起動後に `sudo grub-editenv /boot/grub/flagenv list` で内容を確認できます。
 
