@@ -6,7 +6,7 @@ comments: true
 category: blog
 tags: osx homebrew postgresql
 ---
-[ruby-jp Slack](homebrew-postgresql) の `#newbie` で `bin/rails db:create` が通らないという話があったので調べてみた結果のまとめです。
+[ruby-jp Slack](https://ruby-jp.github.io/) の `#newbie` で `bin/rails db:create` が通らないという話があったので調べてみた結果のまとめです。
 
 <!--more-->
 
