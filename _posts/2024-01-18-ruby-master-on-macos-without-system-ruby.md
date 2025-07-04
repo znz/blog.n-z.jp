@@ -4,7 +4,7 @@ title: "rubyのmasterがmacOSのsystem rubyに非対応になった"
 date: 2024-01-18 15:10 +0900
 comments: true
 category: blog
-tags: ruby
+tags: ruby macos
 ---
 [ruby master の BASERUBY が 2.7 以上を要求するようになった](https://github.com/ruby/ruby/commit/b4ed5b7dfe9ca01ef48922d1b2c154767b7e4e86)ので、
 リリースされていない ruby master を macOS で自前でビルドしている人は対処が必要な場合があります。
