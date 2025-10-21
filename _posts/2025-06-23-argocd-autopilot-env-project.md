@@ -6,7 +6,6 @@ comments: true
 category: blog
 tags: kubernetes argocd
 ---
-{% raw %}
 argocd-autopilot を使って作成した manifests の構成で、
 開発環境と検証環境で1台構成と3台構成という違いがでてきて、
 開発環境では kube-prometheus-stack などは省きたい、
@@ -14,6 +13,8 @@ argocd-autopilot を使って作成した manifests の構成で、
 projects を使って分離しました。
 
 <!--more-->
+
+{% raw %}
 
 ## 動作確認環境
 
