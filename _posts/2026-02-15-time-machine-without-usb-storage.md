@@ -31,7 +31,7 @@ macOS の Time Machine バックアップはネットワークストレージだ
 hdiutil create -size 500g -type SPARSEBUNDLE -fs HFS+J -volname "TimeMachineDisk" ~/TimeMachineDisk.sparsebundle
 ```
 
-- `-size 500g` はマウント後の `df -h` で確認すると 500Gi になっています。
+- `-size 500g` はマウント後の `df -h` で確認すると 500Gi になっています。(2026-02-22 追記: 500g は大きすぎたので `sudo du -shc /Volumes/TimeMachineDisk/Backups.backupdb/knmbp24/Latest/Data/* | sort -h` でバックアップ対象が 40G ぐらいなのを確認して 100g にして様子をみています。)
 - `-type SPARSEBUNDLE` は sparse bundle を明示していますが、拡張子があれば省略可能と hdiutil の manpage に書いてありました。
 - `-fs HFS+J` は hdiutil の manpage をみてもはっきりとした説明はなかったのですが、ジャーナリングの HFS+ だと思います。
 - `-volname` は `/Volumes` の中に出てくるディレクトリ名になったり、Finder で見える名前になったりしていました。
