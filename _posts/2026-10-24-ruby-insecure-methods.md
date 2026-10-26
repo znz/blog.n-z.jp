@@ -49,6 +49,12 @@ JSON は `JSON.parse` か `JSON.unsafe_load` を使うか、`create_addition:` �
 普通のプログラムではすべきではなく、
 プログラム側の問題として Ruby 本体では脆弱性としては扱わないとしているようです。
 
+2026-10-26 追記:
+そらはさんが
+[I personally oppose that 'compiling an untrusted pattern is unsupported usage of Regexp engine bundled to Ruby', except of DoS. But this isn't the case, it's not well documented, and is against the common sense to expect risk of memory corruption and RCE](https://x.com/sora_h/status/2113542482978087027)
+と言っているように、正規表現エンジンで任意のパターンで DoS というのは DFA じゃない正規表現エンジンだとそういうものとして認識されてそうですが (`Regexp.linear_time?` や `Regexp.timeout` で緩和さているとはいえ)、
+RCE は正規表現エンジンで想定できるリスクではないとみなされているようです。
+
 ## IO 系
 
 ### IO.read 系
